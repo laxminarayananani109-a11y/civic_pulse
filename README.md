@@ -107,3 +107,6 @@ civic-pulse/
 ## Impact
 
 Civic Pulse enables authorities to move from reactive complaint handling to proactive issue management through AI-driven insights and visualization.
+
+## Live link(deployed)
+https://civicpulseteamsynergy.streamlit.app/submit_complaint
