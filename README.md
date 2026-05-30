@@ -2,58 +2,108 @@
 
 ## Overview
 
-Civic Pulse is an AI-powered CivicTech platform that collects, categorizes, and visualizes civic complaints to help authorities identify issue hotspots and prioritize action.
+Civic Pulse is an AI-powered CivicTech platform that helps authorities identify, monitor, and prioritize civic issues by analyzing citizen complaints and visualizing them on an interactive dashboard.
 
 ## Problem Statement
 
-Civic complaints are scattered across multiple platforms, making it difficult for authorities to monitor and respond efficiently.
+Civic complaints are often scattered across multiple platforms, making it difficult for authorities to identify critical issues and respond efficiently.
 
 ## Proposed Solution
 
-Civic Pulse uses AI to analyze complaints, detect trends, identify hotspots, and provide actionable insights through an interactive dashboard.
+Civic Pulse aggregates complaints, classifies them using AI, identifies hotspots, detects duplicate reports, and provides real-time insights through a visual dashboard.
 
-## Features
+## Key Features
 
-* Complaint Submission
+* Citizen Complaint Submission
 * AI-Based Issue Classification
 * Duplicate Complaint Detection
 * Interactive Heatmap
 * Trend Analysis Dashboard
-* Priority Scoring
+* Priority-Based Issue Ranking
+* Data Visualization and Reporting
 
 ## Tech Stack
 
-* Python
+### Frontend
+
 * Streamlit
+
+### Backend
+
+* Python
+
+### Database
+
 * SQLite
-* Pandas
-* Folium
-* Plotly
+
+### AI & Machine Learning
+
 * Hugging Face Transformers
+* Sentence Transformers
+* Scikit-learn
+
+### Visualization
+
+* Plotly
+* Folium
+* OpenStreetMap
+
+### Version Control
+
+* Git
 * GitLab
 
 ## Project Structure
 
-```text
 civic-pulse/
 ├── app.py
 ├── requirements.txt
 ├── data/
 ├── utils/
+├── assets/
 ├── README.md
 └── CONTRIBUTING.md
-```
 
-## Team Members
+## Team Members & Responsibilities
 
-* Member 1 – Data Engineering
-* Member 2 – AI Development
-* Member 3 – Frontend & Dashboard
-* Member 4 – Integration & Deployment
+### Member 1 – Project Lead & Integration
 
-## Future Scope
+* Project planning
+* Module integration
+* Final testing
 
-* Social Media Integration
-* Real-Time Alerts
-* Predictive Hotspot Detection
-* Government Portal Integration
+### Member 2 – Data Engineer
+
+* Data collection
+* Data cleaning
+* Database management
+
+### Member 3 – AI Engineer
+
+* Complaint classification
+* Duplicate detection
+* Sentiment analysis
+
+### Member 4 – Frontend Developer
+
+* Streamlit interface
+* User forms
+* Dashboard design
+
+### Member 5 – Visualization & Documentation
+
+* Heatmaps
+* Analytics dashboard
+* Documentation and presentation
+
+## Future Enhancements
+
+* Social media integration
+* Real-time notifications
+* Predictive hotspot analysis
+* Government portal integration
+* Mobile application support
+
+## Impact
+
+Civic Pulse enables authorities to move from reactive complaint handling to proactive issue management through AI-driven insights and visualization.
