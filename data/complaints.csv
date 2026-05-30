@@ -1,0 +1,11 @@
+id,description,category,location,date,latitude,longitude
+1,Water supply interrupted for 3 days,Water,Kukatpally,2026-05-30,17.4948,78.3996
+2,Large pothole causing accidents,Roads,Ameerpet,2026-05-29,17.4375,78.4482
+3,Frequent power cuts in colony,Electricity,LB Nagar,2026-05-28,17.3457,78.5520
+4,Garbage not collected for a week,Garbage,Secunderabad,2026-05-27,17.4399,78.4983
+5,Heavy traffic congestion during peak hours,Traffic,Hitech City,2026-05-26,17.4435,78.3772
+6,No drinking water in locality,Water,Miyapur,2026-05-25,17.4969,78.3562
+7,Road damaged after rains,Roads,Uppal,2026-05-24,17.4058,78.5591
+8,Street lights not working,Electricity,Dilsukhnagar,2026-05-23,17.3688,78.5247
+9,Garbage dumped near school,Garbage,Kompally,2026-05-22,17.5251,78.4832
+10,Traffic signal malfunctioning,Traffic,Panjagutta,2026-05-21,17.4283,78.4524
