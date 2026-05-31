@@ -20,3 +20,9 @@ gitleaks:
 
   script:
     - gitleaks detect --source . --verbose
+
+dependency-audit:
+  stage: test
+  script:
+    - pip install pip-audit
+    - pip-audit
