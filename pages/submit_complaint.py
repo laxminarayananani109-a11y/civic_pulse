@@ -17,25 +17,16 @@ category = st.selectbox(
         "Electricity",
         "Garbage",
         "Traffic",
-        "Public Safety"
-    ]
+        "Public Safety",
+    ],
 )
 
 
+location = st.selectbox("Select Location", HYDERABAD_LOCATIONS)
 
-location = st.selectbox(
-    "Select Location",
-    HYDERABAD_LOCATIONS
-)
+address = st.text_input("Landmark / Detailed Address")
 
-address = st.text_input(
-    "Landmark / Detailed Address"
-)
-
-severity = st.selectbox(
-    "Issue Severity",
-    ["Low", "Medium", "High"]
-)
+severity = st.selectbox("Issue Severity", ["Low", "Medium", "High"])
 
 if st.button("Submit Complaint"):
 
@@ -44,10 +35,6 @@ if st.button("Submit Complaint"):
 
     else:
 
-        add_complaint(
-            description,
-            category,
-            location
-        )
+        add_complaint(description, category, location)
 
         st.success("Complaint submitted successfully!")
