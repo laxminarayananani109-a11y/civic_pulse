@@ -6,10 +6,41 @@ import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 from streamlit_autorefresh import st_autorefresh
-
+st.set_page_config(
+    page_title="CivicPulse Dashboard",
+    page_icon="📍",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 dark_mode = st.sidebar.toggle("🌙 Dark Mode")
+st.markdown("""
+<div style="
+background: linear-gradient(135deg,#111827,#1E293B);
+padding:35px;
+border-radius:22px;
+margin-bottom:25px;
+border:1px solid #374151;
+">
 
+<h1 style="
+color:white;
+font-size:42px;
+margin-bottom:10px;
+">
+📊 Civic Analytics Dashboard
+</h1>
+
+<p style="
+color:#CBD5E1;
+font-size:18px;
+">
+Monitor complaint trends, civic hotspots, AI insights,
+and urban issue analytics in real time.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 if dark_mode:
 
     st.markdown("""
@@ -69,7 +100,11 @@ df = pd.read_sql_query(
     "SELECT * FROM complaints",
     conn
 )
-
+m = folium.Map(
+    location=[17.3850, 78.4867],
+    zoom_start=11,
+    tiles="CartoDB dark_matter"
+)
 # ======================
 # METRICS
 # ======================
@@ -172,7 +207,20 @@ st.divider()
 # MAP
 # ======================
 
-st.subheader("🗺️ Complaint Hotspots")
+st.markdown("""
+<div class="glass-card">
+
+<h2 style="color:white;">
+🗺 Complaint Hotspots
+</h2>
+
+<p style="color:#CBD5E1;">
+Track complaint density and monitor civic issue hotspots
+across different regions in real time.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 location_coords = {
     "Hyderabad": [17.3850, 78.4867],
