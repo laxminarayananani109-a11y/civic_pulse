@@ -20,7 +20,7 @@ st.subheader("AI-Powered Civic Issue Monitoring Platform")
 
 st.markdown("""
 <div style="
-background: rgba(255,255,255,0.05);
+background: rgba(128,128,128,0.08);
 backdrop-filter: blur(12px);
 padding:60px;
 border-radius:30px;
@@ -42,7 +42,7 @@ font-weight:800;
 font-size:30px;
 font-weight:400;
 margin-bottom:30px;
-color:#E2E8F0;
+color:inherit;
 ">
 AI-Powered Civic Issue Monitoring Platform
 </h3>
@@ -51,7 +51,7 @@ AI-Powered Civic Issue Monitoring Platform
 font-size:20px;
 line-height:1.8;
 max-width:900px;
-color:#F8FAFC;
+color:inherit;
 ">
 Monitor civic complaints, analyze urban issues,
 track live heatmaps, and generate intelligent insights
@@ -151,7 +151,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("""
     <div style="
-    background:#111827;
+    background: rgba(128,128,128,0.08);
     padding:30px;
     border-radius:20px;
     border:1px solid #374151;
@@ -160,7 +160,7 @@ with col1:
     
     <h2 style="color:#60A5FA;">📩</h2>
     
-    <h3 style="color:white;">
+    <h3 style="color:inherit;">
     Smart Complaint Submission
     </h3>
     
@@ -185,11 +185,11 @@ with col2:
     
     <h2 style="color:#34D399;">🧠</h2>
     
-    <h3 style="color:white;">
+    <h3 style="color:inherit;">
     AI Classification
     </h3>
     
-    <p style="color:#D1D5DB;">
+    <p style="color:inherit;">
     Artificial intelligence automatically
     identifies complaint categories
     and organizes civic data efficiently.
@@ -238,7 +238,7 @@ with col1:
     ">
 
     <h1 style="color:#60A5FA;">{total_complaints}</h1>
-    <p style="color:white;">Complaints Monitored</p>
+    <p style="color:inherit;">Complaints Monitored</p>
 
     </div>
     """, unsafe_allow_html=True)
