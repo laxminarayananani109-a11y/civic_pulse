@@ -1,5 +1,6 @@
 stages:
   - test
+<<<<<<< HEAD
   - security
 
 test:
@@ -13,3 +14,15 @@ bandit:
   script:
     - pip install bandit
     - bandit -r .
+=======
+
+test:
+  stage: test
+  image: python:3.11
+
+  before_script:
+    - pip install -r requirements.txt
+
+  script:
+    - echo "Running tests"
+>>>>>>> bbc81a380f654b9cc0269ad109fb0c9844435e96

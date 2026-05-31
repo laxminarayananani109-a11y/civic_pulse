@@ -6,52 +6,42 @@ import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 from streamlit_autorefresh import st_autorefresh
+st.set_page_config(
+    page_title="CivicPulse Dashboard",
+    page_icon="📍",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
+dark_mode = True
+st.markdown("""
+<div style="
+background: linear-gradient(135deg,#111827,#1E293B);
+padding:35px;
+border-radius:22px;
+margin-bottom:25px;
+border:1px solid #374151;
+">
 
-dark_mode = st.sidebar.toggle("🌙 Dark Mode")
+<h1 style="
+color:white;
+font-size:42px;
+margin-bottom:10px;
+">
+📊 Civic Analytics Dashboard
+</h1>
 
-if dark_mode:
+<p style="
+color:#CBD5E1;
+font-size:18px;
+">
+Monitor complaint trends, civic hotspots, AI insights,
+and urban issue analytics in real time.
+</p>
 
-    st.markdown("""
-        <style>
+</div>
+""", unsafe_allow_html=True)
 
-            .main .block-container{
-            background:#111827;
-             padding:2rem;
-            border-radius:20px;
-            border:1px solid #30363d;}
-
-        </style>
-    """, unsafe_allow_html=True)
-    st.markdown("""
-    <style>
-
-    .stApp {
-        background-color: #0f1117;
-        color: white;
-    }
-
-    section[data-testid="stSidebar"] {
-        background-color: #161b22;
-    }
-
-    div[data-testid="metric-container"] {
-        background-color: #1c2128;
-        border-radius: 12px;
-        padding: 15px;
-    }
-
-    div[data-testid="metric-container"] * {
-        color: white !important;
-    }
-
-    h1,h2,h3,h4,h5,h6,p,label,span {
-        color: white !important;
-    }
-    
-    
-    </style>
-    """, unsafe_allow_html=True)
 
 # Auto Refresh Every 5 Seconds
 st_autorefresh(
@@ -69,7 +59,11 @@ df = pd.read_sql_query(
     "SELECT * FROM complaints",
     conn
 )
-
+m = folium.Map(
+    location=[17.3850, 78.4867],
+    zoom_start=11,
+    tiles="CartoDB dark_matter"
+)
 # ======================
 # METRICS
 # ======================
@@ -80,24 +74,41 @@ water_count = len(df[df["category"] == "Water"])
 road_count = len(df[df["category"] == "Road"])
 electricity_count = len(df[df["category"] == "Electricity"])
 garbage_count = len(df[df["category"] == "Garbage"])
+water_supply_count = len(df[df["category"] == "Water Supply"])
+
+traffic_count = len(df[df["category"] == "Traffic"])
+st.sidebar.metric("Complaints Today", total_complaints)
+
+st.sidebar.metric("Resolved", total_complaints // 2)
+
+st.sidebar.metric("Hotspots", len(df["location"].unique()))
 
 c1, c2, c3, c4, c5 = st.columns(5)
 
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
 cards = [
-    ("📋 Total", total_complaints),
-    ("💧 Water", water_count),
-    ("🛣️ Road", road_count),
-    ("⚡ Electricity", electricity_count),
-    ("🗑️ Garbage", garbage_count)
+    ("📊 Total", total_complaints),
+("🚰 Water", water_count),
+("🛣️ Road", road_count),
+("⚡ Electricity", electricity_count),
+("🗑️ Garbage", garbage_count),
+("💧 Water Supply", water_supply_count),
+("🚦 Traffic", traffic_count)
 ]
 
-for col, (title, value) in zip([col1,col2,col3,col4,col5], cards):
+for col, (title, value) in zip([col1,col2,col3,col4,col5,col6,col7], cards):
     with col:
         st.markdown(f"""
         <div style="
-            background:#1c2128;
+            if dark_mode:
+                card_bg = "#1c2128"
+                card_border = "#30363d"
+                text_color = "white"
+            else:
+                card_bg = "#ffffff"
+                card_border = "#d1d5db"
+                text_color = "#111827"
             padding:20px;
             border-radius:15px;
             border:1px solid #30363d;
@@ -120,40 +131,85 @@ if not df.empty:
     category_counts = df["category"].value_counts()
 
     # Bar Chart
-    bar_fig = px.bar(
-        x=category_counts.index,
-        y=category_counts.values,
-        title="Complaints by Category"
+    # Bar Chart
+bar_fig = px.bar(
+    x=category_counts.index,
+    y=category_counts.values,
+    text=category_counts.values,
+    labels={"x": "Category", "y": "Complaints"},
+    title="📊 Complaints by Category"
+)
+
+# Modern Styling
+bar_fig.update_layout(
+    paper_bgcolor="#0b1120",
+    plot_bgcolor="#0b1120",
+    font_color="white",
+    title_font_size=24,
+    height=500,
+    xaxis=dict(
+        showgrid=False,
+        title=""
+    ),
+    yaxis=dict(
+        showgrid=True,
+        gridcolor="#1e293b",
+        title=""
     )
+)
 
-    if dark_mode:
-        bar_fig.update_layout(
-            paper_bgcolor="#111827",
-            plot_bgcolor="#111827",
-            font_color="white"
-        )
+# Fancy Bars
+bar_fig.update_traces(
+    marker_color=[
+        "#38BDF8",
+        "#818CF8",
+        "#22C55E",
+        "#F59E0B",
+        "#EF4444",
+        "#14B8A6"
+    ],
+    marker_line_color="white",
+    marker_line_width=1.5,
+    opacity=0.95,
+    textposition="outside"
+)
 
-    st.plotly_chart(bar_fig, use_container_width=True)
+st.plotly_chart(bar_fig, use_container_width=True)
 
-    # Pie Chart
-    fig = px.pie(
-        values=category_counts.values,
-        names=category_counts.index,
-        title="Complaint Distribution"
-    )
+# Attractive Pie Chart
+fig = px.pie(
+    values=category_counts.values,
+    names=category_counts.index,
+    hole=0.55,
+    title="🔥 Complaint Distribution",
+    color_discrete_sequence=[
+        "#38BDF8",
+        "#818CF8",
+        "#22C55E",
+        "#F59E0B",
+        "#EF4444",
+        "#14B8A6"
+    ]
+)
 
-    if dark_mode:
-        fig.update_layout(
-            paper_bgcolor="#0f1117",
-            plot_bgcolor="#0f1117",
-            font_color="white"
-        )
+# Modern Styling
+fig.update_traces(
+    textinfo="percent+label",
+    pull=[0.03, 0.03, 0.03, 0.03, 0.03, 0.03],
+    marker=dict(line=dict(color="#0b1120", width=3))
+)
 
-    st.plotly_chart(fig, use_container_width=True)
+fig.update_layout(
+    paper_bgcolor="#0b1120",
+    plot_bgcolor="#0b1120",
+    font_color="white",
+    title_font_size=26,
+    height=600,
+    legend_title="Categories",
+    legend_font_size=14
+)
 
-
-st.divider()
-
+st.plotly_chart(fig, use_container_width=True)
 # ======================
 # INSIGHTS
 # ======================
@@ -172,7 +228,20 @@ st.divider()
 # MAP
 # ======================
 
-st.subheader("🗺️ Complaint Hotspots")
+st.markdown("""
+<div class="glass-card">
+
+<h2 style="color:white;">
+🗺 Complaint Hotspots
+</h2>
+
+<p style="color:#CBD5E1;">
+Track complaint density and monitor civic issue hotspots
+across different regions in real time.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 location_coords = {
     "Hyderabad": [17.3850, 78.4867],
