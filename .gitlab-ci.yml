@@ -10,3 +10,13 @@ test:
 
   script:
     - echo "Running tests"
+
+stages:
+  - security
+
+gitleaks:
+  stage: security
+  image: zricethezav/gitleaks:latest
+
+  script:
+    - gitleaks detect --source . --verbose
