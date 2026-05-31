@@ -10,12 +10,271 @@ st.title("📍 Civic Pulse")
 
 st.subheader("AI-Powered Civic Issue Monitoring Platform")
 
-st.write("""
-Welcome to Civic Pulse.
+st.markdown("""
+<div style="
+background: linear-gradient(135deg,#2563EB,#1E3A8A);
+padding:60px;
+border-radius:30px;
+color:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+margin-top:20px;
+">
 
-Features:
-- Complaint Submission
-- AI Classification
-- Dashboard Analytics
-- Heatmap Visualization
+<h1 style="
+font-size:60px;
+margin-bottom:10px;
+color:white;
+font-weight:800;
+">
+📍 Civic Pulse
+</h1>
+
+<h3 style="
+font-size:30px;
+font-weight:400;
+margin-bottom:30px;
+color:#E2E8F0;
+">
+AI-Powered Civic Issue Monitoring Platform
+</h3>
+
+<p style="
+font-size:20px;
+line-height:1.8;
+max-width:900px;
+color:#F8FAFC;
+">
+Monitor civic complaints, analyze urban issues,
+track live heatmaps, and generate intelligent insights
+for smarter governance across Telangana.
+</p>
+
+</div>
+""", unsafe_allow_html=True)
+st.markdown("---")
+
+st.markdown("## 🌍 About CivicPulse")
+
+st.markdown("""
+CivicPulse is an AI-powered civic issue monitoring platform designed to help citizens and local authorities track, analyze, and resolve urban problems efficiently.
+
+The platform enables real-time complaint reporting, intelligent issue categorization, geographic heatmap visualization, and data-driven civic analytics.
+
+By combining artificial intelligence with interactive dashboards, CivicPulse helps improve transparency, response efficiency, and smart city management.
 """)
+st.markdown("---")
+
+st.markdown("## ⚡ How It Works")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.markdown("""
+    ### 1️⃣ Report Issues
+    
+    Citizens submit complaints related to:
+    - Roads
+    - Water
+    - Electricity
+    - Garbage
+    - Traffic
+    """)
+
+with col2:
+    st.markdown("""
+    ### 2️⃣ AI Processing
+    
+    The platform:
+    - Classifies complaints
+    - Detects categories
+    - Organizes issue data
+    - Generates analytics
+    """)
+
+with col3:
+    st.markdown("""
+    ### 3️⃣ Smart Monitoring
+    
+    Authorities can:
+    - Monitor hotspots
+    - Analyze trends
+    - Prioritize areas
+    - Improve response time
+    """)
+    st.markdown("---")
+
+st.markdown("## 🧠 Why Choose CivicPulse?")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    ### ✅ Smart Governance
+    
+    CivicPulse helps authorities identify,
+    prioritize, and monitor civic issues
+    using intelligent analytics.
+    
+    ### 📊 Data-Driven Insights
+    
+    Interactive dashboards and visual analytics
+    help improve urban decision-making.
+    """)
+
+with col2:
+    st.markdown("""
+    ### 🌍 Real-Time Monitoring
+    
+    Track complaints and issue hotspots
+    across multiple regions instantly.
+    
+    ### 🚀 AI-Powered Automation
+    
+    AI classification reduces manual effort
+    and improves issue management efficiency.
+    """)
+    st.markdown("---")
+
+st.markdown("## 🚀 Core Platform Features")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.markdown("""
+    <div style="
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #374151;
+    height:260px;
+    ">
+    
+    <h2 style="color:#60A5FA;">📩</h2>
+    
+    <h3 style="color:white;">
+    Smart Complaint Submission
+    </h3>
+    
+    <p style="color:#D1D5DB;">
+    Citizens can submit civic complaints
+    instantly with category tracking
+    and issue descriptions.
+    </p>
+    
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div style="
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #374151;
+    height:260px;
+    ">
+    
+    <h2 style="color:#34D399;">🧠</h2>
+    
+    <h3 style="color:white;">
+    AI Classification
+    </h3>
+    
+    <p style="color:#D1D5DB;">
+    Artificial intelligence automatically
+    identifies complaint categories
+    and organizes civic data efficiently.
+    </p>
+    
+    </div>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.markdown("""
+    <div style="
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #374151;
+    height:260px;
+    ">
+    
+    <h2 style="color:#FBBF24;">📊</h2>
+    
+    <h3 style="color:white;">
+    Live Analytics Dashboard
+    </h3>
+    
+    <p style="color:#D1D5DB;">
+    Visualize complaint trends,
+    heatmaps, and urban issue
+    patterns in real time.
+    </p>
+    
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("---")
+
+st.markdown("## 📈 Platform Statistics")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.markdown("""
+    <div style="
+    background:#1E293B;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    ">
+    
+    <h1 style="color:#60A5FA;">1,250+</h1>
+    <p style="color:white;">Complaints Monitored</p>
+    
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div style="
+    background:#1E293B;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    ">
+    
+    <h1 style="color:#34D399;">94%</h1>
+    <p style="color:white;">AI Classification Accuracy</p>
+    
+    </div>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.markdown("""
+    <div style="
+    background:#1E293B;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    ">
+    
+    <h1 style="color:#FBBF24;">28</h1>
+    <p style="color:white;">Hotspot Regions</p>
+    
+    </div>
+    """, unsafe_allow_html=True)
+
+with col4:
+    st.markdown("""
+    <div style="
+    background:#1E293B;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    ">
+    
+    <h1 style="color:#F87171;">24/7</h1>
+    <p style="color:white;">Live Monitoring</p>
+    
+    </div>
+    """, unsafe_allow_html=True)
