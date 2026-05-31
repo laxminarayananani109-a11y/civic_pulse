@@ -1,10 +1,8 @@
 # Changelog
 
-## v1.0.0
+## v1.0
 
-### Added
-- Complaint submission system
-- Dashboard analytics
-- AI issue classification
-- SQLite database integration
-- Duplicate complaint detection
+- Complaint Submission
+- Dashboard
+- Heatmap Visualization
+- Analytics
