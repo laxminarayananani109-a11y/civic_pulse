@@ -1,0 +1,5 @@
+dependency-audit:
+  stage: test
+  script:
+    - pip install pip-audit
+    - pip-audit
