@@ -6,4 +6,14 @@ quality-check:
   image: python:3.12
 
   script:
-    - echo "Compliance check passed"
+    - echo "Running tests"
+
+stages:
+  - security
+
+gitleaks:
+  stage: security
+  image: zricethezav/gitleaks:latest
+
+  script:
+    - gitleaks detect --source . --verbose
