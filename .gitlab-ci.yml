@@ -5,3 +5,10 @@ pipeline_check:
   stage: test
   script:
     - echo "Pipeline running successfully"
+  
+dependency-audit:
+  image: python:3.11
+  stage: test
+  script:
+    - pip install pip-audit
+    - pip-audit
