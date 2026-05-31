@@ -1,16 +1,31 @@
 id,description,category,location,date,latitude,longitude
-1,Water supply interrupted for 3 days,Water,Kukatpally,2026-05-30,17.4948,78.3996
-2,Large pothole causing accidents,Roads,Ameerpet,2026-05-29,17.4375,78.4482
-3,Frequent power cuts in colony,Electricity,LB Nagar,2026-05-28,17.3457,78.5520
-4,Garbage not collected for a week,Garbage,Secunderabad,2026-05-27,17.4399,78.4983
-5,Heavy traffic congestion during peak hours,Traffic,Hitech City,2026-05-26,17.4435,78.3772
-6,No drinking water in locality,Water,Miyapur,2026-05-25,17.4969,78.3562
-7,Road damaged after rains,Roads,Uppal,2026-05-24,17.4058,78.5591
-8,Street lights not working,Electricity,Dilsukhnagar,2026-05-23,17.3688,78.5247
-9,Garbage dumped near school,Garbage,Kompally,2026-05-22,17.5251,78.4832
-10,Traffic signal malfunctioning,Traffic,Panjagutta,2026-05-21,17.4283,78.4524complaint_id,date,area,category,status,priority,latitude,longitude,complaint_text
-CP001,2026-01-05,Kukatpally,Roads,Pending,High,17.4948,78.3996,"Large pothole near Kukatpally Metro causing accidents during peak hours"
-CP002,2026-01-06,Madhapur,Garbage,In Progress,Medium,17.4483,78.3915,"Garbage heap not cleared for five days near residential colony"
-CP003,2026-01-06,Gachibowli,Water Supply,Pending,High,17.4401,78.3489,"No municipal water supply for last two days"
-CP004,2026-01-07,LB Nagar,Drainage,Pending,High,17.3457,78.5520,"Sewage overflowing onto main road creating foul smell"
-CP005,2026-01-07,Ameerpet,Streetlights,Resolved,Low,17.4375,78.4482,"Streetlights not functioning near metro station"
+1,Water supply interrupted for three days causing hardship to residents,Water,Kukatpally,2026-05-01,17.4948,78.3996
+2,Large pothole causing accidents near the main junction,Roads,Ameerpet,2026-05-02,17.4375,78.4482
+3,Frequent power cuts affecting households and shops,Electricity,LB Nagar,2026-05-03,17.3457,78.5522
+4,Garbage not collected for over a week creating foul smell,Garbage,Secunderabad,2026-05-04,17.4399,78.4983
+5,Heavy traffic congestion during peak hours causing delays,Traffic,Hitech City,2026-05-05,17.4435,78.3772
+6,No drinking water supply in the locality for two days,Water,Miyapur,2026-05-06,17.4940,78.3578
+7,Road damaged after rains making commuting difficult,Roads,Uppal,2026-05-07,17.4058,78.5591
+8,Street lights not working on several roads,Electricity,Dilsukhnagar,2026-05-08,17.3688,78.5247
+9,Garbage dumped near school premises attracting stray animals,Garbage,Kompally,2026-05-09,17.5304,78.4817
+10,Traffic signal malfunctioning at major intersection,Traffic,Panjagutta,2026-05-10,17.4283,78.4524
+11,Overflowing drainage causing waterlogging in streets,Drainage,LB Nagar,2026-05-11,17.3457,78.5522
+12,Sewage water mixing with drinking water supply,Water,Malakpet,2026-05-12,17.3731,78.4900
+13,Footpath encroachment making pedestrian movement unsafe,Roads,Begumpet,2026-05-13,17.4448,78.4666
+14,Transformer sparks observed during rain,Electricity,Moosapet,2026-05-14,17.4690,78.4304
+15,Garbage bins overflowing near residential colony,Garbage,Nizampet,2026-05-15,17.5184,78.3862
+16,Unauthorized parking causing traffic bottlenecks,Traffic,Kondapur,2026-05-16,17.4698,78.3638
+17,Drinking water contamination reported by residents,Water,Tarnaka,2026-05-17,17.4281,78.5386
+18,Road divider broken creating accident risk,Roads,Gachibowli,2026-05-18,17.4401,78.3489
+19,Frequent voltage fluctuations damaging appliances,Electricity,Manikonda,2026-05-19,17.4062,78.3852
+20,Garbage burning creating air pollution concerns,Garbage,Mehdipatnam,2026-05-20,17.3982,78.4391
+21,Traffic congestion due to ongoing construction work,Traffic,Madhapur,2026-05-21,17.4483,78.3915
+22,Pipeline leakage wasting large amounts of water,Water,Chandanagar,2026-05-22,17.4945,78.3242
+23,Roadside potholes causing vehicle damage,Roads,Nacharam,2026-05-23,17.4330,78.5580
+24,Power outage affecting businesses for several hours,Electricity,Kukatpally,2026-05-24,17.4948,78.3996
+25,Garbage collection vehicle not visiting locality regularly,Garbage,Alwal,2026-05-25,17.5008,78.5120
+26,Traffic signal timing causing long queues at junction,Traffic,Ameerpet,2026-05-26,17.4375,78.4482
+27,Insufficient water pressure in residential apartments,Water,Miyapur,2026-05-27,17.4940,78.3578
+28,Uneven road surface leading to frequent accidents,Roads,Uppal,2026-05-28,17.4058,78.5591
+29,Street lights flickering during night hours,Electricity,Dilsukhnagar,2026-05-29,17.3688,78.5247
+30,Garbage accumulation near bus stop causing inconvenience,Garbage,Secunderabad,2026-05-30,17.4399,78.4983

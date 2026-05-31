@@ -32,7 +32,7 @@ def add_complaint(description, category, location):
         """
         INSERT INTO complaints
         (description, category, location, date)
-        VALUES (?, ?, ?, ?)
+          VALUES (?, ?, ?, ?)
     """,
         (description, category, location, datetime.now().strftime("%Y-%m-%d")),
     )
@@ -52,9 +52,6 @@ def get_all_complaints():
     conn.close()
 
     return complaints
-
-
-import sqlite3
 
 
 def get_total_complaints():

@@ -1,7 +1,7 @@
-from utils.database import *
+from utils.database import create_table, add_complaint, get_all_complaints
 
 create_table()
 
-add_complaint("Water supply issue", "Water", "Hyderabad", "2026-05-30")
+add_complaint("Water supply issue", "Water", "Hyderabad")
 
 print(get_all_complaints())
