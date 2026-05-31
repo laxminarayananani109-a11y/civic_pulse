@@ -8,4 +8,9 @@ id,description,category,location,date,latitude,longitude
 7,Road damaged after rains,Roads,Uppal,2026-05-24,17.4058,78.5591
 8,Street lights not working,Electricity,Dilsukhnagar,2026-05-23,17.3688,78.5247
 9,Garbage dumped near school,Garbage,Kompally,2026-05-22,17.5251,78.4832
-10,Traffic signal malfunctioning,Traffic,Panjagutta,2026-05-21,17.4283,78.4524
+10,Traffic signal malfunctioning,Traffic,Panjagutta,2026-05-21,17.4283,78.4524complaint_id,date,area,category,status,priority,latitude,longitude,complaint_text
+CP001,2026-01-05,Kukatpally,Roads,Pending,High,17.4948,78.3996,"Large pothole near Kukatpally Metro causing accidents during peak hours"
+CP002,2026-01-06,Madhapur,Garbage,In Progress,Medium,17.4483,78.3915,"Garbage heap not cleared for five days near residential colony"
+CP003,2026-01-06,Gachibowli,Water Supply,Pending,High,17.4401,78.3489,"No municipal water supply for last two days"
+CP004,2026-01-07,LB Nagar,Drainage,Pending,High,17.3457,78.5520,"Sewage overflowing onto main road creating foul smell"
+CP005,2026-01-07,Ameerpet,Streetlights,Resolved,Low,17.4375,78.4482,"Streetlights not functioning near metro station"

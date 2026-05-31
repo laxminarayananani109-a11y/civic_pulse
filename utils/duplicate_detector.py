@@ -1,5 +1,5 @@
 from difflib import SequenceMatcher
-
+ 
 def is_duplicate(new_complaint, existing_complaints, threshold=0.8):
 
     for complaint in existing_complaints:

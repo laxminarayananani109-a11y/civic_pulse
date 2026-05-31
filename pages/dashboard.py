@@ -13,18 +13,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-dark_mode = st.sidebar.toggle("🌙 Dark Mode")
-st.sidebar.markdown("---")
-
-st.sidebar.markdown("## 📍 CivicPulse")
-
-st.sidebar.caption("AI-Powered Civic Intelligence Platform")
-st.sidebar.markdown("---")
-
-st.sidebar.markdown("### 📊 Quick Stats")
-
-
-
+dark_mode = True
 st.markdown("""
 <div style="
 background: linear-gradient(135deg,#111827,#1E293B);
@@ -52,48 +41,7 @@ and urban issue analytics in real time.
 
 </div>
 """, unsafe_allow_html=True)
-if dark_mode:
 
-    st.markdown("""
-        <style>
-
-            .main .block-container{
-            background:#111827;
-             padding:2rem;
-            border-radius:20px;
-            border:1px solid #30363d;}
-
-        </style>
-    """, unsafe_allow_html=True)
-    st.markdown("""
-    <style>
-
-    .stApp {
-        background-color: #0f1117;
-        color: white;
-    }
-
-    section[data-testid="stSidebar"] {
-        background-color: #161b22;
-    }
-
-    div[data-testid="metric-container"] {
-        background-color: #1c2128;
-        border-radius: 12px;
-        padding: 15px;
-    }
-
-    div[data-testid="metric-container"] * {
-        color: white !important;
-    }
-
-    h1,h2,h3,h4,h5,h6,p,label,span {
-        color: white !important;
-    }
-    
-    
-    </style>
-    """, unsafe_allow_html=True)
 
 # Auto Refresh Every 5 Seconds
 st_autorefresh(
@@ -153,7 +101,14 @@ for col, (title, value) in zip([col1,col2,col3,col4,col5,col6,col7], cards):
     with col:
         st.markdown(f"""
         <div style="
-            background:#1c2128;
+            if dark_mode:
+                card_bg = "#1c2128"
+                card_border = "#30363d"
+                text_color = "white"
+            else:
+                card_bg = "#ffffff"
+                card_border = "#d1d5db"
+                text_color = "#111827"
             padding:20px;
             border-radius:15px;
             border:1px solid #30363d;

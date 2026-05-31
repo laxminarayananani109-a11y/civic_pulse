@@ -52,3 +52,29 @@ def get_all_complaints():
     conn.close()
 
     return complaints
+import sqlite3
+
+def get_total_complaints():
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(*) FROM complaints")
+
+    total = cursor.fetchone()[0]
+
+    conn.close()
+
+    return total
+
+
+def get_total_locations():
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT COUNT(DISTINCT location) FROM complaints")
+
+    total = cursor.fetchone()[0]
+
+    conn.close()
+
+    return total
