@@ -1,5 +1,20 @@
 stages:
   - test
+<<<<<<< HEAD
+  - security
+
+test:
+  stage: test
+  script:
+    - pip install -r requirements.txt
+    - pytest
+
+bandit:
+  stage: security
+  script:
+    - pip install bandit
+    - bandit -r .
+=======
 
 test:
   stage: test
@@ -10,3 +25,4 @@ test:
 
   script:
     - echo "Running tests"
+>>>>>>> bbc81a380f654b9cc0269ad109fb0c9844435e96
