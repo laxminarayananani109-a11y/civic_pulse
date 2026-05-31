@@ -5,11 +5,7 @@ from utils.database import get_total_complaints, get_total_locations
 total_complaints = get_total_complaints()
 total_locations = get_total_locations()
 
-st.set_page_config(
-    page_title="Civic Pulse",
-    page_icon="📍",
-    layout="wide"
-)
+st.set_page_config(page_title="Civic Pulse", page_icon="📍", layout="wide")
 
 total_complaints = get_total_complaints()
 
@@ -18,7 +14,8 @@ st.title("📍 Civic Pulse")
 
 st.subheader("AI-Powered Civic Issue Monitoring Platform")
 
-st.markdown("""
+st.markdown(
+    """
 <div style="
 background: rgba(128,128,128,0.08);
 backdrop-filter: blur(12px);
@@ -59,18 +56,22 @@ for smarter governance across Telangana.
 </p>
 
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 st.markdown("---")
 
 st.markdown("## 🌍 About CivicPulse")
 
-st.markdown("""
+st.markdown(
+    """
 CivicPulse is an AI-powered civic issue monitoring platform designed to help citizens and local authorities track, analyze, and resolve urban problems efficiently.
 
 The platform enables real-time complaint reporting, intelligent issue categorization, geographic heatmap visualization, and data-driven civic analytics.
 
 By combining artificial intelligence with interactive dashboards, CivicPulse helps improve transparency, response efficiency, and smart city management.
-""")
+"""
+)
 st.markdown("---")
 
 st.markdown("## ⚡ How It Works")
@@ -78,7 +79,8 @@ st.markdown("## ⚡ How It Works")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown("""
+    st.markdown(
+        """
     ### 1️⃣ Report Issues
     
     Citizens submit complaints related to:
@@ -87,10 +89,12 @@ with col1:
     - Electricity
     - Garbage
     - Traffic
-    """)
+    """
+    )
 
 with col2:
-    st.markdown("""
+    st.markdown(
+        """
     ### 2️⃣ AI Processing
     
     The platform:
@@ -98,10 +102,12 @@ with col2:
     - Detects categories
     - Organizes issue data
     - Generates analytics
-    """)
+    """
+    )
 
 with col3:
-    st.markdown("""
+    st.markdown(
+        """
     ### 3️⃣ Smart Monitoring
     
     Authorities can:
@@ -109,7 +115,8 @@ with col3:
     - Analyze trends
     - Prioritize areas
     - Improve response time
-    """)
+    """
+    )
     st.markdown("---")
 
 st.markdown("## 🧠 Why Choose CivicPulse?")
@@ -117,7 +124,8 @@ st.markdown("## 🧠 Why Choose CivicPulse?")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("""
+    st.markdown(
+        """
     ### ✅ Smart Governance
     
     CivicPulse helps authorities identify,
@@ -128,10 +136,12 @@ with col1:
     
     Interactive dashboards and visual analytics
     help improve urban decision-making.
-    """)
+    """
+    )
 
 with col2:
-    st.markdown("""
+    st.markdown(
+        """
     ### 🌍 Real-Time Monitoring
     
     Track complaints and issue hotspots
@@ -141,7 +151,8 @@ with col2:
     
     AI classification reduces manual effort
     and improves issue management efficiency.
-    """)
+    """
+    )
     st.markdown("---")
 
 st.markdown("## 🚀 Core Platform Features")
@@ -149,7 +160,8 @@ st.markdown("## 🚀 Core Platform Features")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.markdown("""
+    st.markdown(
+        """
     <div style="
     background: rgba(128,128,128,0.08);
     padding:30px;
@@ -171,10 +183,13 @@ with col1:
     </p>
     
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
 
 with col2:
-    st.markdown("""
+    st.markdown(
+        """
     <div style="
     background:#111827;
     padding:30px;
@@ -196,10 +211,13 @@ with col2:
     </p>
     
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
 
 with col3:
-    st.markdown("""
+    st.markdown(
+        """
     <div style="
     background:#111827;
     padding:30px;
@@ -221,7 +239,9 @@ with col3:
     </p>
     
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
     st.markdown("---")
 
 st.markdown("## 📈 Platform Statistics")
@@ -229,7 +249,8 @@ st.markdown("## 📈 Platform Statistics")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.markdown(f"""
+    st.markdown(
+        f"""
     <div style="
     background:#1E293B;
     padding:25px;
@@ -241,10 +262,13 @@ with col1:
     <p style="color:inherit;">Complaints Monitored</p>
 
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
 
 with col2:
-    st.markdown("""
+    st.markdown(
+        """
     <div style="
     background:#1E293B;
     padding:25px;
@@ -256,10 +280,13 @@ with col2:
     <p style="color:white;">AI Classification Accuracy</p>
     
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
 
 with col3:
-    st.markdown(f"""
+    st.markdown(
+        f"""
     <div style="
     background:#1E293B;
     padding:25px;
@@ -271,10 +298,13 @@ with col3:
     <p style="color:white;">Hotspot Regions</p>
 
     </div>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
 
 with col4:
-    st.markdown("""
+    st.markdown(
+        """
     <div style="
     background:#1E293B;
     padding:25px;
@@ -286,5 +316,6 @@ with col4:
     <p style="color:white;">Live Monitoring</p>
     
     </div>
-    """, unsafe_allow_html=True)
-    
+    """,
+        unsafe_allow_html=True,
+    )

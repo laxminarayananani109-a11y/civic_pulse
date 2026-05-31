@@ -6,15 +6,17 @@ import folium
 from folium.plugins import HeatMap
 from streamlit_folium import st_folium
 from streamlit_autorefresh import st_autorefresh
+
 st.set_page_config(
     page_title="CivicPulse Dashboard",
     page_icon="📍",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
 dark_mode = True
-st.markdown("""
+st.markdown(
+    """
 <div style="
 background: linear-gradient(135deg,#111827,#1E293B);
 padding:35px;
@@ -40,14 +42,13 @@ and urban issue analytics in real time.
 </p>
 
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 
 # Auto Refresh Every 5 Seconds
-st_autorefresh(
-    interval=5000,
-    key="dashboard_refresh"
-)
+st_autorefresh(interval=5000, key="dashboard_refresh")
 
 st.title("📊 Civic Pulse Dashboard")
 st.markdown("Monitor and analyze civic complaints in real-time.")
@@ -55,15 +56,8 @@ st.markdown("Monitor and analyze civic complaints in real-time.")
 # Database
 conn = sqlite3.connect("data/complaints.db")
 
-df = pd.read_sql_query(
-    "SELECT * FROM complaints",
-    conn
-)
-m = folium.Map(
-    location=[17.3850, 78.4867],
-    zoom_start=11,
-    tiles="CartoDB dark_matter"
-)
+df = pd.read_sql_query("SELECT * FROM complaints", conn)
+m = folium.Map(location=[17.3850, 78.4867], zoom_start=11, tiles="CartoDB dark_matter")
 # ======================
 # METRICS
 # ======================
@@ -89,17 +83,18 @@ col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
 cards = [
     ("📊 Total", total_complaints),
-("🚰 Water", water_count),
-("🛣️ Road", road_count),
-("⚡ Electricity", electricity_count),
-("🗑️ Garbage", garbage_count),
-("💧 Water Supply", water_supply_count),
-("🚦 Traffic", traffic_count)
+    ("🚰 Water", water_count),
+    ("🛣️ Road", road_count),
+    ("⚡ Electricity", electricity_count),
+    ("🗑️ Garbage", garbage_count),
+    ("💧 Water Supply", water_supply_count),
+    ("🚦 Traffic", traffic_count),
 ]
 
-for col, (title, value) in zip([col1,col2,col3,col4,col5,col6,col7], cards):
+for col, (title, value) in zip([col1, col2, col3, col4, col5, col6, col7], cards):
     with col:
-        st.markdown(f"""
+        st.markdown(
+            f"""
         <div style="
             if dark_mode:
                 card_bg = "#1c2128"
@@ -116,7 +111,9 @@ for col, (title, value) in zip([col1,col2,col3,col4,col5,col6,col7], cards):
             <h4>{title}</h4>
             <h1>{value}</h1>
         </div>
-        """, unsafe_allow_html=True)
+        """,
+            unsafe_allow_html=True,
+        )
 
 st.divider()
 
@@ -137,7 +134,7 @@ bar_fig = px.bar(
     y=category_counts.values,
     text=category_counts.values,
     labels={"x": "Category", "y": "Complaints"},
-    title="📊 Complaints by Category"
+    title="📊 Complaints by Category",
 )
 
 # Modern Styling
@@ -147,31 +144,17 @@ bar_fig.update_layout(
     font_color="white",
     title_font_size=24,
     height=500,
-    xaxis=dict(
-        showgrid=False,
-        title=""
-    ),
-    yaxis=dict(
-        showgrid=True,
-        gridcolor="#1e293b",
-        title=""
-    )
+    xaxis=dict(showgrid=False, title=""),
+    yaxis=dict(showgrid=True, gridcolor="#1e293b", title=""),
 )
 
 # Fancy Bars
 bar_fig.update_traces(
-    marker_color=[
-        "#38BDF8",
-        "#818CF8",
-        "#22C55E",
-        "#F59E0B",
-        "#EF4444",
-        "#14B8A6"
-    ],
+    marker_color=["#38BDF8", "#818CF8", "#22C55E", "#F59E0B", "#EF4444", "#14B8A6"],
     marker_line_color="white",
     marker_line_width=1.5,
     opacity=0.95,
-    textposition="outside"
+    textposition="outside",
 )
 
 st.plotly_chart(bar_fig, use_container_width=True)
@@ -188,15 +171,15 @@ fig = px.pie(
         "#22C55E",
         "#F59E0B",
         "#EF4444",
-        "#14B8A6"
-    ]
+        "#14B8A6",
+    ],
 )
 
 # Modern Styling
 fig.update_traces(
     textinfo="percent+label",
     pull=[0.03, 0.03, 0.03, 0.03, 0.03, 0.03],
-    marker=dict(line=dict(color="#0b1120", width=3))
+    marker=dict(line=dict(color="#0b1120", width=3)),
 )
 
 fig.update_layout(
@@ -206,7 +189,7 @@ fig.update_layout(
     title_font_size=26,
     height=600,
     legend_title="Categories",
-    legend_font_size=14
+    legend_font_size=14,
 )
 
 st.plotly_chart(fig, use_container_width=True)
@@ -218,9 +201,7 @@ if not df.empty:
 
     top_category = df["category"].value_counts().idxmax()
 
-    st.success(
-        f"Most Reported Issue: {top_category}"
-    )
+    st.success(f"Most Reported Issue: {top_category}")
 
 st.divider()
 
@@ -228,7 +209,8 @@ st.divider()
 # MAP
 # ======================
 
-st.markdown("""
+st.markdown(
+    """
 <div class="glass-card">
 
 <h2 style="color:white;">
@@ -241,7 +223,9 @@ across different regions in real time.
 </p>
 
 </div>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
 location_coords = {
     "Hyderabad": [17.3850, 78.4867],
@@ -251,7 +235,6 @@ location_coords = {
     "Kukatpally": [17.4948, 78.3996],
     "Ameerpet": [17.4375, 78.4482],
     "Hitech City": [17.4435, 78.3772],
-
     "Madhapur": [17.4483, 78.3915],
     "Kondapur": [17.4580, 78.3640],
     "Jubilee Hills": [17.4326, 78.4071],
@@ -263,13 +246,10 @@ location_coords = {
     "Secunderabad": [17.4399, 78.4983],
     "Tarnaka": [17.4283, 78.5386],
     "Tolichowki": [17.4048, 78.4118],
-    "Shamshabad": [17.2511, 78.4336]
+    "Shamshabad": [17.2511, 78.4336],
 }
 
-m = folium.Map(
-    location=[17.3850, 78.4867],
-    zoom_start=10
-)
+m = folium.Map(location=[17.3850, 78.4867], zoom_start=10)
 
 heat_data = []
 
@@ -284,18 +264,13 @@ for _, row in df.iterrows():
         heat_data.append([lat, lon])
 
         folium.Marker(
-            [lat, lon],
-            popup=f"{row['category']} - {row['description']}"
+            [lat, lon], popup=f"{row['category']} - {row['description']}"
         ).add_to(m)
 
 if heat_data:
     HeatMap(heat_data).add_to(m)
 
-st_folium(
-    m,
-    width=1000,
-    height=500
-)
+st_folium(m, width=1000, height=500)
 
 st.write(df["category"].unique())
 
@@ -307,10 +282,7 @@ st.divider()
 
 st.subheader("📋 Complaint Records")
 
-st.dataframe(
-    df,
-    use_container_width=True
-)
+st.dataframe(df, use_container_width=True)
 
 st.divider()
 
