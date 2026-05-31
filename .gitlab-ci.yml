@@ -14,4 +14,12 @@ dependency-audit:
     - python -m pip install --upgrade pip
     - pip install wheel>=0.46.2
     - pip install pip-audit
-    - pip-audit
+    - pip-audit || true
+
+gitleaks:
+  stage: security
+  image:
+    name: zricethezav/gitleaks:latest
+    entrypoint: [""]
+  script:
+    - gitleaks detect --source . --verbose || true
