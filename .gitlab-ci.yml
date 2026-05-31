@@ -1,14 +1,21 @@
 stages:
   - test
+  - security
 
 pipeline_check:
   stage: test
   script:
-    - echo "Pipeline running successfully"
-  
+    - echo "Running tests"
+
 dependency-audit:
   image: python:3.11
   stage: test
   script:
     - pip install pip-audit
     - pip-audit
+
+gitleaks:
+  stage: security
+  image: zricethezav/gitleaks:latest
+  script:
+    - gitleaks detect --source . --verbose
