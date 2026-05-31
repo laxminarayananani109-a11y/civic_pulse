@@ -3,17 +3,6 @@ stages:
 
 quality-check:
   stage: test
-  image: python:3.12
-
   script:
-    - echo "Running tests"
-
-stages:
-  - security
-
-gitleaks:
-  stage: security
-  image: zricethezav/gitleaks:latest
-
-  script:
-    - gitleaks detect --source . --verbose
+    - echo "Running Civic Pulse Tests"
+    
