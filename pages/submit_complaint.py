@@ -1,5 +1,6 @@
 import streamlit as st
 from utils.database import add_complaint
+from data.hyderabadlocations import HYDERABAD_LOCATIONS
 
 st.set_page_config(page_title="Civic Pulse")
 
@@ -20,22 +21,25 @@ category = st.selectbox(
     ]
 )
 
+
+
 location = st.selectbox(
-    "Location",
-    [
-        "Hyderabad",
-        "Miyapur",
-        "Gachibowli",
-        "Uppal",
-        "Kukatpally",
-        "Ameerpet",
-        "Hitech City"
-    ]
+    "Select Location",
+    HYDERABAD_LOCATIONS
+)
+
+address = st.text_input(
+    "Landmark / Detailed Address"
+)
+
+severity = st.selectbox(
+    "Issue Severity",
+    ["Low", "Medium", "High"]
 )
 
 if st.button("Submit Complaint"):
 
-    if not description or not location:
+    if not description or not address:
         st.error("Please fill all fields")
 
     else:
