@@ -1,5 +1,6 @@
 stages:
   - test
+  - security
 
 pipeline_check:
   stage: test
