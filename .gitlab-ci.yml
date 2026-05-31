@@ -1,36 +1,9 @@
-<<<<<<< HEAD
-dependency-audit:
-  stage: test
-  script:
-    - pip install pip-audit
-    - pip-audit
-=======
 stages:
   - test
-<<<<<<< HEAD
-  - security
-
-test:
-  stage: test
-  script:
-    - pip install -r requirements.txt
-    - pytest
-
-bandit:
-  stage: security
-  script:
-    - pip install bandit
-    - bandit -r .
-=======
 
 test:
   stage: test
   image: python:3.11
 
-  before_script:
-    - pip install -r requirements.txt
-
   script:
-    - echo "Running tests"
->>>>>>> bbc81a380f654b9cc0269ad109fb0c9844435e96
->>>>>>> 48ff97455085721a6809f6ed1e1a15e7867b44fb
+    - echo "Pipeline is running"
