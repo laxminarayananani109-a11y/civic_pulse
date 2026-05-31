@@ -5,12 +5,14 @@ stages:
 pipeline_check:
   stage: test
   script:
-    - echo "Running tests"
+    - echo "Pipeline running successfully"
 
 dependency-audit:
   image: python:3.11
   stage: test
   script:
+    - python -m pip install --upgrade pip
+    - pip install wheel>=0.46.2
     - pip install pip-audit
     - pip-audit || true
 
