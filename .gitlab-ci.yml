@@ -1,8 +1,7 @@
 stages:
   - test
 
-quality-check:
+pipeline_check:
   stage: test
   script:
-    - echo "Running Civic Pulse Tests"
-    
+    - echo "Pipeline running successfully"
