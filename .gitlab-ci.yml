@@ -8,6 +8,7 @@ pipeline_check:
     - echo "Running tests"
 
 dependency-audit:
+  image: python:3.11
   stage: test
   script:
     - pip install pip-audit
