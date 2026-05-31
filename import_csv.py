@@ -8,12 +8,7 @@ df = pd.read_csv("data/complaints.csv")
 conn = sqlite3.connect("data/complaints.db")
 
 # Replace old table with new data
-df.to_sql(
-    "complaints",
-    conn,
-    if_exists="replace",
-    index=False
-)
+df.to_sql("complaints", conn, if_exists="replace", index=False)
 
 conn.commit()
 conn.close()
