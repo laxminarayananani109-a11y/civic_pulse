@@ -28,5 +28,5 @@ HYDERABAD_LOCATIONS = [
     "Tarnaka",
     "Tolichowki",
     "Uppal",
-    "Yousufguda"
+    "Yousufguda",
 ]
