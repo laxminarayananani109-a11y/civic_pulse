@@ -1,4 +1,8 @@
 # Changelog
 
-## v1.0.0
-- Initial release
+## v1.0
+
+- Complaint Submission
+- Dashboard
+- Heatmap Visualization
+- Analytics
