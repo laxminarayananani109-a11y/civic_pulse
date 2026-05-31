@@ -3,7 +3,7 @@ stages:
 
 pipeline_check:
   stage: test
-  image: python:3.11
+  image: python:3.12
 
   script:
     - echo "Pipeline running successfully"
