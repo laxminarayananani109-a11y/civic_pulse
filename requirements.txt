@@ -5,3 +5,13 @@ folium
 streamlit-folium
 scikit-learn
 sentence-transformers
+ruff
+mypy
+vulture
+bandit
+pylint
+flake8
+semgrep
+pyupgrade
+pip-audit
+detect-secrets
