@@ -181,7 +181,20 @@ location_coords = {
     "Uppal": [17.4058, 78.5591],
     "Kukatpally": [17.4948, 78.3996],
     "Ameerpet": [17.4375, 78.4482],
-    "Hitech City": [17.4435, 78.3772]
+    "Hitech City": [17.4435, 78.3772],
+
+    "Madhapur": [17.4483, 78.3915],
+    "Kondapur": [17.4580, 78.3640],
+    "Jubilee Hills": [17.4326, 78.4071],
+    "Banjara Hills": [17.4126, 78.4482],
+    "Begumpet": [17.4440, 78.4660],
+    "LB Nagar": [17.3457, 78.5522],
+    "Manikonda": [17.4062, 78.3736],
+    "Nagole": [17.3715, 78.5695],
+    "Secunderabad": [17.4399, 78.4983],
+    "Tarnaka": [17.4283, 78.5386],
+    "Tolichowki": [17.4048, 78.4118],
+    "Shamshabad": [17.2511, 78.4336]
 }
 
 m = folium.Map(
