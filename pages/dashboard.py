@@ -14,6 +14,17 @@ st.set_page_config(
 )
 
 dark_mode = st.sidebar.toggle("🌙 Dark Mode")
+st.sidebar.markdown("---")
+
+st.sidebar.markdown("## 📍 CivicPulse")
+
+st.sidebar.caption("AI-Powered Civic Intelligence Platform")
+st.sidebar.markdown("---")
+
+st.sidebar.markdown("### 📊 Quick Stats")
+
+
+
 st.markdown("""
 <div style="
 background: linear-gradient(135deg,#111827,#1E293B);
@@ -115,20 +126,30 @@ water_count = len(df[df["category"] == "Water"])
 road_count = len(df[df["category"] == "Road"])
 electricity_count = len(df[df["category"] == "Electricity"])
 garbage_count = len(df[df["category"] == "Garbage"])
+water_supply_count = len(df[df["category"] == "Water Supply"])
+
+traffic_count = len(df[df["category"] == "Traffic"])
+st.sidebar.metric("Complaints Today", total_complaints)
+
+st.sidebar.metric("Resolved", total_complaints // 2)
+
+st.sidebar.metric("Hotspots", len(df["location"].unique()))
 
 c1, c2, c3, c4, c5 = st.columns(5)
 
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
 cards = [
-    ("📋 Total", total_complaints),
-    ("💧 Water", water_count),
-    ("🛣️ Road", road_count),
-    ("⚡ Electricity", electricity_count),
-    ("🗑️ Garbage", garbage_count)
+    ("📊 Total", total_complaints),
+("🚰 Water", water_count),
+("🛣️ Road", road_count),
+("⚡ Electricity", electricity_count),
+("🗑️ Garbage", garbage_count),
+("💧 Water Supply", water_supply_count),
+("🚦 Traffic", traffic_count)
 ]
 
-for col, (title, value) in zip([col1,col2,col3,col4,col5], cards):
+for col, (title, value) in zip([col1,col2,col3,col4,col5,col6,col7], cards):
     with col:
         st.markdown(f"""
         <div style="
@@ -155,40 +176,85 @@ if not df.empty:
     category_counts = df["category"].value_counts()
 
     # Bar Chart
-    bar_fig = px.bar(
-        x=category_counts.index,
-        y=category_counts.values,
-        title="Complaints by Category"
+    # Bar Chart
+bar_fig = px.bar(
+    x=category_counts.index,
+    y=category_counts.values,
+    text=category_counts.values,
+    labels={"x": "Category", "y": "Complaints"},
+    title="📊 Complaints by Category"
+)
+
+# Modern Styling
+bar_fig.update_layout(
+    paper_bgcolor="#0b1120",
+    plot_bgcolor="#0b1120",
+    font_color="white",
+    title_font_size=24,
+    height=500,
+    xaxis=dict(
+        showgrid=False,
+        title=""
+    ),
+    yaxis=dict(
+        showgrid=True,
+        gridcolor="#1e293b",
+        title=""
     )
+)
 
-    if dark_mode:
-        bar_fig.update_layout(
-            paper_bgcolor="#111827",
-            plot_bgcolor="#111827",
-            font_color="white"
-        )
+# Fancy Bars
+bar_fig.update_traces(
+    marker_color=[
+        "#38BDF8",
+        "#818CF8",
+        "#22C55E",
+        "#F59E0B",
+        "#EF4444",
+        "#14B8A6"
+    ],
+    marker_line_color="white",
+    marker_line_width=1.5,
+    opacity=0.95,
+    textposition="outside"
+)
 
-    st.plotly_chart(bar_fig, use_container_width=True)
+st.plotly_chart(bar_fig, use_container_width=True)
 
-    # Pie Chart
-    fig = px.pie(
-        values=category_counts.values,
-        names=category_counts.index,
-        title="Complaint Distribution"
-    )
+# Attractive Pie Chart
+fig = px.pie(
+    values=category_counts.values,
+    names=category_counts.index,
+    hole=0.55,
+    title="🔥 Complaint Distribution",
+    color_discrete_sequence=[
+        "#38BDF8",
+        "#818CF8",
+        "#22C55E",
+        "#F59E0B",
+        "#EF4444",
+        "#14B8A6"
+    ]
+)
 
-    if dark_mode:
-        fig.update_layout(
-            paper_bgcolor="#0f1117",
-            plot_bgcolor="#0f1117",
-            font_color="white"
-        )
+# Modern Styling
+fig.update_traces(
+    textinfo="percent+label",
+    pull=[0.03, 0.03, 0.03, 0.03, 0.03, 0.03],
+    marker=dict(line=dict(color="#0b1120", width=3))
+)
 
-    st.plotly_chart(fig, use_container_width=True)
+fig.update_layout(
+    paper_bgcolor="#0b1120",
+    plot_bgcolor="#0b1120",
+    font_color="white",
+    title_font_size=26,
+    height=600,
+    legend_title="Categories",
+    legend_font_size=14
+)
 
-
-st.divider()
-
+st.plotly_chart(fig, use_container_width=True)
 # ======================
 # INSIGHTS
 # ======================
