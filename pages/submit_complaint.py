@@ -29,12 +29,10 @@ address = st.text_input("Landmark / Detailed Address")
 severity = st.selectbox("Issue Severity", ["Low", "Medium", "High"])
 
 if st.button("Submit Complaint"):
-
     if not description or not address:
         st.error("Please fill all fields")
 
     else:
-
         add_complaint(description, category, location)
 
         st.success("Complaint submitted successfully!")

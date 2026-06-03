@@ -80,12 +80,11 @@ for category, count in distribution.items():
             [
                 cid,
                 secrets.choice(templates[category]),
-category,
+                category,
                 location,
                 (start_date + timedelta(days=secrets.randbelow(365))).strftime(
                     "%Y-%m-%d"
                 ),
-                
                 lat,
                 lon,
             ]
