@@ -39,6 +39,8 @@ font-weight:400;
 margin-bottom:30px;
 color:#374151;
 ">
+AI-Powered Civic Issue Monitoring Platform
+</h3>
 
 <p style="
 font-size:20px;
