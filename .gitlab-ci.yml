@@ -1,9 +1,11 @@
 stages:
   - test
 
-quality-check:
+test:
   stage: test
   image: python:3.12
 
   script:
-    - echo "Compliance check passed"
+    - ruff check .
+    - flake8 .
+    - bandit -r .
