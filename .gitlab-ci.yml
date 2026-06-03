@@ -13,22 +13,22 @@ before_script:
   - pip install ruff bandit pip-audit pytest pytest-cov
 
 lint:
-  stage: test
+  stage: lint
   script:
     - ruff check .
 
 security:
-  stage: test
+  stage: security
   script:
     - bandit -r .
 
 dependency_audit:
-  stage: test
+  stage: dependency_audit
   script:
     - pip-audit
 
 coverage_report:
-  stage: test
+  stage: coverage_report
   script:
     - pytest --cov=. --cov-report=xml || true
   artifacts:
