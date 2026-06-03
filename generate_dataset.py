@@ -1,5 +1,5 @@
 import pandas as pd
-import random
+import secrets
 from datetime import datetime, timedelta
 
 locations = {
@@ -73,18 +73,19 @@ cid = 1
 
 for category, count in distribution.items():
     for _ in range(count):
-        location = random.choice(list(locations.keys()))
+        location = secrets.choice(list(locations.keys()))
         lat, lon = locations[location]
 
         data.append(
             [
                 cid,
-                random.choice(templates[category]),
-                category,
+                secrets.choice(templates[category]),
+category,
                 location,
-                (start_date + timedelta(days=random.randint(0, 364))).strftime(
+                (start_date + timedelta(days=secrets.randbelow(365))).strftime(
                     "%Y-%m-%d"
                 ),
+                
                 lat,
                 lon,
             ]
