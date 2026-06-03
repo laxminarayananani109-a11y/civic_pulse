@@ -1,112 +1,134 @@
 # Civic Pulse
 
+AI-Powered Civic Issue Monitoring Platform
+
 ## Overview
 
-Civic Pulse is an AI-powered CivicTech platform that helps authorities identify, monitor, and prioritize civic issues by analyzing citizen complaints and visualizing them on an interactive dashboard.
+Civic Pulse is an intelligent civic issue monitoring platform designed to help citizens and local authorities report, track, and analyze urban problems.
 
-## Problem Statement
+The platform uses Artificial Intelligence to classify complaints, generate insights, identify hotspots, and improve civic response efficiency.
 
-Civic complaints are often scattered across multiple platforms, making it difficult for authorities to identify critical issues and respond efficiently.
+---
 
-## Proposed Solution
+## Features
 
-Civic Pulse aggregates complaints, classifies them using AI, identifies hotspots, detects duplicate reports, and provides real-time insights through a visual dashboard.
+### Complaint Management
 
-## Key Features
+- Submit civic complaints
+- Track issue categories
+- Store complaint information
 
-* Citizen Complaint Submission
-* AI-Based Issue Classification
-* Duplicate Complaint Detection
-* Interactive Heatmap
-* Trend Analysis Dashboard
-* Priority-Based Issue Ranking
-* Data Visualization and Reporting
+### AI Classification
 
-## Tech Stack
+- Automatic complaint categorization
+- Smart issue identification
+- Data organization
+
+### Analytics Dashboard
+
+- Complaint statistics
+- Category analysis
+- Trend monitoring
+
+### Heatmap Visualization
+
+- Geographic issue tracking
+- Hotspot identification
+- Regional monitoring
+
+---
+
+## Technology Stack
 
 ### Frontend
 
-* Streamlit
+- Streamlit
 
 ### Backend
 
-* Python
+- Python
 
 ### Database
 
-* SQLite
-
-### AI & Machine Learning
-
-* Hugging Face Transformers
-* Sentence Transformers
-* Scikit-learn
+- SQLite
 
 ### Visualization
 
-* Plotly
-* Folium
-* OpenStreetMap
+- Plotly
+- Folium
 
-### Version Control
+---
 
-* Git
-* GitLab
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://code.swecha.org/laxman_p/hackathon.git
+```
+
+Move into project directory:
+
+```bash
+cd hackathon
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
 
 ## Project Structure
 
-civic-pulse/
+```text
+hackathon/
+│
 ├── app.py
-├── requirements.txt
-├── data/
+├── pages/
 ├── utils/
-├── assets/
+├── data/
+├── requirements.txt
 ├── README.md
-└── CONTRIBUTING.md
+└── assets/
+```
 
-## Team Members & Responsibilities
+---
 
-### Member 1 – Project Lead & Integration
+## Usage
 
-* Project planning
-* Module integration
-* Final testing
+1. Launch the application.
+2. Submit civic complaints.
+3. View complaint analytics.
+4. Monitor issue hotspots.
+5. Generate AI-powered insights.
 
-### Member 2 – Data Engineer
-
-* Data collection
-* Data cleaning
-* Database management
-
-### Member 3 – AI Engineer
-
-* Complaint classification
-* Duplicate detection
-* Sentiment analysis
-
-### Member 4 – Frontend Developer
-
-* Streamlit interface
-* User forms
-* Dashboard design
-
-### Member 5 – Visualization & Documentation
-
-* Heatmaps
-* Analytics dashboard
-* Documentation and presentation
+---
 
 ## Future Enhancements
 
-* Social media integration
-* Real-time notifications
-* Predictive hotspot analysis
-* Government portal integration
-* Mobile application support
+- Mobile application support
+- Real-time notifications
+- Multi-language complaint submission
+- Advanced AI analytics
+- Government integration APIs
 
-## Impact
+---
 
-Civic Pulse enables authorities to move from reactive complaint handling to proactive issue management through AI-driven insights and visualization.
+## Contributors
 
-## Live link(deployed)
-https://civicpulseteamsynergy.streamlit.app/submit_complaint
+Laxminarayana Padamati
+
+---
+
+## License
+
+This project was developed as part of a CivicTech Hackathon initiative.
