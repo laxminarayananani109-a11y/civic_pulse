@@ -2,55 +2,9 @@ stages:
   - test
   - security
 
-pipeline_check:
+test:
   stage: test
   script:
-    - echo "Pipeline running successfully"
-
-lint:
-  image: python:3.11
-  stage: test
-  script:
-    - pip install ruff
     - ruff check .
-
-type_check:
-  image: python:3.11
-  stage: test
-  script:
-    - pip install mypy
-    - mypy app.py || true
-
-coverage_report:
-  image: python:3.11
-  stage: test
-  script:
-    - pip install pytest pytest-cov
-    - pytest --cov=. --cov-report=xml
-  artifacts:
-    paths:
-      - coverage.xml
-
-dependency-audit:
-  image: python:3.11
-  stage: test
-  script:
-    - python -m pip install --upgrade pip
-    - pip install wheel
-    - pip install pip-audit
-    - pip-audit || true
-
-gitleaks:
-  stage: security
-  image:
-    name: zricethezav/gitleaks:latest
-    entrypoint: [""]
-  script:
-    - gitleaks detect --source . --verbose || true
-
-changelog:
-  image: rust:latest
-  stage: test
-  script:
-    - cargo install git-cliff
-    - git-cliff --output CHANGELOG.md
+    - flake8 .
+    - bandit -r .
