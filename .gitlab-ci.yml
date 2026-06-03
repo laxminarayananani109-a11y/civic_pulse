@@ -10,12 +10,22 @@ stages:
 
 before_script:
   - python --version
-  - pip install ruff bandit pip-audit pytest pytest-cov
+  - pip install ruff mypy bandit pip-audit pytest pytest-cov
 
 lint:
   stage: lint
   script:
     - ruff check .
+
+format:
+  stage: format
+  script:
+    - ruff format --check .
+
+type_check:
+  stage: type_check
+  script:
+    - mypy .
 
 security:
   stage: security
@@ -23,14 +33,20 @@ security:
     - bandit -r .
 
 dependency_audit:
-  stage: dependency_audit
+  stage: security
   script:
     - pip-audit
 
-coverage_report:
-  stage: coverage_report
+test:
+  stage: test
   script:
-    - pytest --cov=. --cov-report=xml || true
+    - pytest
+
+coverage_report:
+  stage: coverage
+  script:
+    - pytest --cov=. --cov-report=xml
+
   artifacts:
     paths:
       - coverage.xml
