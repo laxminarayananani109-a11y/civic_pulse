@@ -5,6 +5,7 @@ stages:
   - format
   - type_check
   - security
+  - quality
   - test
   - coverage
 
@@ -36,6 +37,11 @@ dependency_audit:
   stage: security
   script:
     - pip-audit
+
+quality:
+  stage: quality
+  script: 
+    -  pylint .
 
 test:
   stage: test
