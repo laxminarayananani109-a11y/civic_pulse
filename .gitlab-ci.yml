@@ -1,10 +1,18 @@
+image: python:3.12
+
 stages:
   - test
-  - security
 
-test:
+before_script:
+  - python --version
+  - pip install ruff bandit
+
+lint:
   stage: test
   script:
     - ruff check .
-    - flake8 .
+
+security:
+  stage: test
+  script:
     - bandit -r .
