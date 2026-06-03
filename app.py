@@ -16,19 +16,18 @@ st.subheader("AI-Powered Civic Issue Monitoring Platform")
 st.markdown(
     """
 <div style="
-background: rgba(128,128,128,0.08);
-backdrop-filter: blur(12px);
+background-color: #f8fafc;
 padding:60px;
 border-radius:30px;
-border:1px solid rgba(255,255,255,0.1);
-box-shadow:0 10px 30px rgba(0,0,0,0.3);
+border:1px solid #d1d5db;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 margin-top:20px;
 ">
 
 <h1 style="
 font-size:60px;
 margin-bottom:10px;
-color:#111827;
+color:#000000 !important;
 font-weight:800;
 ">
 📍 Civic Pulse
@@ -38,16 +37,14 @@ font-weight:800;
 font-size:30px;
 font-weight:400;
 margin-bottom:30px;
-color:inherit;
+color:#374151;
 ">
-AI-Powered Civic Issue Monitoring Platform
-</h3>
 
 <p style="
 font-size:20px;
 line-height:1.8;
 max-width:900px;
-color:inherit;
+color:#4b5563;
 ">
 Monitor civic complaints, analyze urban issues,
 track live heatmaps, and generate intelligent insights
