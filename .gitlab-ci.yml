@@ -5,7 +5,7 @@ stages:
 
 before_script:
   - python --version
-  - pip install ruff bandit
+  - pip install ruff bandit pip-audit pytest pytest-cov
 
 lint:
   stage: test
@@ -16,3 +16,16 @@ security:
   stage: test
   script:
     - bandit -r .
+
+dependency_audit:
+  stage: test
+  script:
+    - pip-audit
+
+coverage_report:
+  stage: test
+  script:
+    - pytest --cov=. --cov-report=xml || true
+  artifacts:
+    paths:
+      - coverage.xml
