@@ -11,7 +11,8 @@ stages:
 
 before_script:
   - python --version
-  - pip install ruff mypy bandit pip-audit pytest pytest-cov
+  - pip install ruff mypy bandit pip-audit pytest pytest-cov pylint
+  
 
 lint:
   stage: lint
