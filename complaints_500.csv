@@ -1,0 +1,501 @@
+id,description,category,location,date,latitude,longitude
+1,Broken road near residential area,Roads,Secunderabad,2025-09-05,17.4399,78.4983
+2,Road repair work incomplete,Roads,Uppal,2025-12-23,17.4058,78.5591
+3,Road repair work incomplete,Roads,Kondapur,2026-01-18,17.466,78.363
+4,Road repair work incomplete,Roads,LB Nagar,2025-06-04,17.3457,78.552
+5,Road damaged after recent rains,Roads,Panjagutta,2025-12-07,17.4283,78.4524
+6,Uneven road surface creating traffic issues,Roads,Uppal,2025-08-24,17.4058,78.5591
+7,Large pothole causing accidents,Roads,Uppal,2025-12-17,17.4058,78.5591
+8,Road damaged after recent rains,Roads,Banjara Hills,2026-03-14,17.4126,78.4482
+9,Uneven road surface creating traffic issues,Roads,Banjara Hills,2026-01-23,17.4126,78.4482
+10,Uneven road surface creating traffic issues,Roads,Dilsukhnagar,2026-05-13,17.3688,78.5247
+11,Large pothole causing accidents,Roads,Banjara Hills,2025-07-21,17.4126,78.4482
+12,Broken road near residential area,Roads,Manikonda,2025-10-29,17.4062,78.39
+13,Road damaged after recent rains,Roads,Miyapur,2026-03-13,17.4969,78.3562
+14,Broken road near residential area,Roads,Hitech City,2025-09-20,17.4435,78.3772
+15,Uneven road surface creating traffic issues,Roads,Secunderabad,2026-04-15,17.4399,78.4983
+16,Large pothole causing accidents,Roads,Kompally,2025-11-21,17.5251,78.4832
+17,Uneven road surface creating traffic issues,Roads,Banjara Hills,2026-05-05,17.4126,78.4482
+18,Road repair work incomplete,Roads,Jubilee Hills,2025-08-13,17.4316,78.4071
+19,Large pothole causing accidents,Roads,Dilsukhnagar,2026-04-07,17.3688,78.5247
+20,Road damaged after recent rains,Roads,LB Nagar,2026-02-20,17.3457,78.552
+21,Road damaged after recent rains,Roads,Kondapur,2026-03-22,17.466,78.363
+22,Road repair work incomplete,Roads,Secunderabad,2026-01-28,17.4399,78.4983
+23,Road damaged after recent rains,Roads,Panjagutta,2025-12-13,17.4283,78.4524
+24,Broken road near residential area,Roads,Kompally,2025-11-07,17.5251,78.4832
+25,Large pothole causing accidents,Roads,Kukatpally,2026-01-30,17.4948,78.3996
+26,Road damaged after recent rains,Roads,Ameerpet,2025-07-05,17.4375,78.4482
+27,Broken road near residential area,Roads,Madhapur,2025-11-29,17.4483,78.3915
+28,Road damaged after recent rains,Roads,Gachibowli,2026-03-14,17.4401,78.3489
+29,Road repair work incomplete,Roads,Kukatpally,2026-04-24,17.4948,78.3996
+30,Road repair work incomplete,Roads,Banjara Hills,2025-09-29,17.4126,78.4482
+31,Broken road near residential area,Roads,Kondapur,2026-01-22,17.466,78.363
+32,Uneven road surface creating traffic issues,Roads,Gachibowli,2025-08-31,17.4401,78.3489
+33,Large pothole causing accidents,Roads,Dilsukhnagar,2025-11-24,17.3688,78.5247
+34,Road damaged after recent rains,Roads,Miyapur,2026-02-14,17.4969,78.3562
+35,Broken road near residential area,Roads,Kondapur,2026-04-16,17.466,78.363
+36,Uneven road surface creating traffic issues,Roads,Gachibowli,2025-11-30,17.4401,78.3489
+37,Broken road near residential area,Roads,Dilsukhnagar,2025-06-09,17.3688,78.5247
+38,Road repair work incomplete,Roads,Dilsukhnagar,2025-09-14,17.3688,78.5247
+39,Road repair work incomplete,Roads,Ameerpet,2026-04-12,17.4375,78.4482
+40,Large pothole causing accidents,Roads,Kompally,2025-06-08,17.5251,78.4832
+41,Broken road near residential area,Roads,Ameerpet,2025-06-12,17.4375,78.4482
+42,Large pothole causing accidents,Roads,Banjara Hills,2025-12-04,17.4126,78.4482
+43,Road damaged after recent rains,Roads,Ameerpet,2025-06-23,17.4375,78.4482
+44,Road damaged after recent rains,Roads,Secunderabad,2025-08-06,17.4399,78.4983
+45,Road damaged after recent rains,Roads,Kompally,2025-12-16,17.5251,78.4832
+46,Broken road near residential area,Roads,Gachibowli,2026-02-17,17.4401,78.3489
+47,Road damaged after recent rains,Roads,Ameerpet,2026-03-22,17.4375,78.4482
+48,Broken road near residential area,Roads,Kompally,2025-10-13,17.5251,78.4832
+49,Road repair work incomplete,Roads,Manikonda,2026-04-19,17.4062,78.39
+50,Large pothole causing accidents,Roads,Ameerpet,2025-11-18,17.4375,78.4482
+51,Road repair work incomplete,Roads,Uppal,2025-12-27,17.4058,78.5591
+52,Road repair work incomplete,Roads,Kondapur,2025-07-02,17.466,78.363
+53,Uneven road surface creating traffic issues,Roads,Ameerpet,2026-04-23,17.4375,78.4482
+54,Road repair work incomplete,Roads,Hitech City,2026-01-22,17.4435,78.3772
+55,Broken road near residential area,Roads,Banjara Hills,2026-02-21,17.4126,78.4482
+56,Large pothole causing accidents,Roads,Panjagutta,2026-01-03,17.4283,78.4524
+57,Uneven road surface creating traffic issues,Roads,Kondapur,2025-11-26,17.466,78.363
+58,Large pothole causing accidents,Roads,Secunderabad,2025-12-28,17.4399,78.4983
+59,Large pothole causing accidents,Roads,Kondapur,2026-02-15,17.466,78.363
+60,Broken road near residential area,Roads,Secunderabad,2025-06-28,17.4399,78.4983
+61,Large pothole causing accidents,Roads,Miyapur,2025-08-23,17.4969,78.3562
+62,Road damaged after recent rains,Roads,Madhapur,2025-07-05,17.4483,78.3915
+63,Road damaged after recent rains,Roads,Secunderabad,2025-12-30,17.4399,78.4983
+64,Road damaged after recent rains,Roads,Ameerpet,2025-07-20,17.4375,78.4482
+65,Uneven road surface creating traffic issues,Roads,LB Nagar,2026-04-18,17.3457,78.552
+66,Uneven road surface creating traffic issues,Roads,Hitech City,2026-03-02,17.4435,78.3772
+67,Large pothole causing accidents,Roads,Gachibowli,2026-05-28,17.4401,78.3489
+68,Road repair work incomplete,Roads,Kondapur,2025-09-12,17.466,78.363
+69,Road damaged after recent rains,Roads,Gachibowli,2026-01-19,17.4401,78.3489
+70,Uneven road surface creating traffic issues,Roads,Kompally,2026-05-19,17.5251,78.4832
+71,Road damaged after recent rains,Roads,Gachibowli,2025-12-26,17.4401,78.3489
+72,Road damaged after recent rains,Roads,Ameerpet,2025-11-22,17.4375,78.4482
+73,Large pothole causing accidents,Roads,Uppal,2026-03-28,17.4058,78.5591
+74,Broken road near residential area,Roads,Miyapur,2026-02-10,17.4969,78.3562
+75,Road damaged after recent rains,Roads,Manikonda,2025-11-15,17.4062,78.39
+76,Uneven road surface creating traffic issues,Roads,Kukatpally,2025-10-04,17.4948,78.3996
+77,Broken road near residential area,Roads,Dilsukhnagar,2026-02-07,17.3688,78.5247
+78,Large pothole causing accidents,Roads,Secunderabad,2025-06-10,17.4399,78.4983
+79,Road damaged after recent rains,Roads,Kompally,2025-11-05,17.5251,78.4832
+80,Large pothole causing accidents,Roads,Madhapur,2025-12-31,17.4483,78.3915
+81,Road repair work incomplete,Roads,Secunderabad,2025-06-05,17.4399,78.4983
+82,Road damaged after recent rains,Roads,Manikonda,2025-08-08,17.4062,78.39
+83,Broken road near residential area,Roads,Dilsukhnagar,2026-01-28,17.3688,78.5247
+84,Road repair work incomplete,Roads,Panjagutta,2026-01-11,17.4283,78.4524
+85,Broken road near residential area,Roads,Hitech City,2025-07-10,17.4435,78.3772
+86,Road damaged after recent rains,Roads,Gachibowli,2025-10-29,17.4401,78.3489
+87,Broken road near residential area,Roads,Hitech City,2025-09-09,17.4435,78.3772
+88,Large pothole causing accidents,Roads,Kondapur,2025-12-01,17.466,78.363
+89,Large pothole causing accidents,Roads,Ameerpet,2025-12-16,17.4375,78.4482
+90,Road repair work incomplete,Roads,LB Nagar,2026-01-10,17.3457,78.552
+91,Road damaged after recent rains,Roads,Secunderabad,2025-06-11,17.4399,78.4983
+92,Broken road near residential area,Roads,Miyapur,2025-09-21,17.4969,78.3562
+93,Uneven road surface creating traffic issues,Roads,Uppal,2025-06-18,17.4058,78.5591
+94,Road damaged after recent rains,Roads,Madhapur,2026-03-29,17.4483,78.3915
+95,Uneven road surface creating traffic issues,Roads,LB Nagar,2026-04-07,17.3457,78.552
+96,Road repair work incomplete,Roads,Ameerpet,2025-06-02,17.4375,78.4482
+97,Large pothole causing accidents,Roads,Dilsukhnagar,2026-03-19,17.3688,78.5247
+98,Uneven road surface creating traffic issues,Roads,Panjagutta,2025-11-13,17.4283,78.4524
+99,Road damaged after recent rains,Roads,Kondapur,2025-11-08,17.466,78.363
+100,Large pothole causing accidents,Roads,Hitech City,2025-11-13,17.4435,78.3772
+101,Uneven road surface creating traffic issues,Roads,Hitech City,2025-08-10,17.4435,78.3772
+102,Large pothole causing accidents,Roads,Madhapur,2025-07-16,17.4483,78.3915
+103,Large pothole causing accidents,Roads,Kompally,2025-07-13,17.5251,78.4832
+104,Broken road near residential area,Roads,Kondapur,2025-09-13,17.466,78.363
+105,Uneven road surface creating traffic issues,Roads,Manikonda,2025-08-29,17.4062,78.39
+106,Uneven road surface creating traffic issues,Roads,Manikonda,2026-04-09,17.4062,78.39
+107,Road repair work incomplete,Roads,LB Nagar,2025-08-16,17.3457,78.552
+108,Broken road near residential area,Roads,Kondapur,2025-12-15,17.466,78.363
+109,Large pothole causing accidents,Roads,Jubilee Hills,2025-12-18,17.4316,78.4071
+110,Road damaged after recent rains,Roads,Gachibowli,2025-12-10,17.4401,78.3489
+111,Road damaged after recent rains,Roads,Dilsukhnagar,2026-02-27,17.3688,78.5247
+112,Large pothole causing accidents,Roads,Dilsukhnagar,2026-03-23,17.3688,78.5247
+113,Road damaged after recent rains,Roads,Kondapur,2025-11-02,17.466,78.363
+114,Uneven road surface creating traffic issues,Roads,Manikonda,2025-11-14,17.4062,78.39
+115,Road damaged after recent rains,Roads,Gachibowli,2026-02-07,17.4401,78.3489
+116,Uneven road surface creating traffic issues,Roads,LB Nagar,2025-06-13,17.3457,78.552
+117,Large pothole causing accidents,Roads,Kukatpally,2025-10-15,17.4948,78.3996
+118,Road repair work incomplete,Roads,Kukatpally,2025-09-24,17.4948,78.3996
+119,Broken road near residential area,Roads,Secunderabad,2026-02-05,17.4399,78.4983
+120,Large pothole causing accidents,Roads,Kompally,2025-07-08,17.5251,78.4832
+121,Broken road near residential area,Roads,Miyapur,2026-05-20,17.4969,78.3562
+122,Large pothole causing accidents,Roads,Secunderabad,2026-01-19,17.4399,78.4983
+123,Road repair work incomplete,Roads,LB Nagar,2025-12-16,17.3457,78.552
+124,Road repair work incomplete,Roads,Hitech City,2026-03-11,17.4435,78.3772
+125,Road repair work incomplete,Roads,Secunderabad,2025-08-07,17.4399,78.4983
+126,Broken road near residential area,Roads,LB Nagar,2026-02-09,17.3457,78.552
+127,Road repair work incomplete,Roads,Kondapur,2025-12-01,17.466,78.363
+128,Broken road near residential area,Roads,Manikonda,2025-06-12,17.4062,78.39
+129,Road damaged after recent rains,Roads,Miyapur,2025-12-06,17.4969,78.3562
+130,Large pothole causing accidents,Roads,LB Nagar,2026-03-16,17.3457,78.552
+131,Water leakage from main pipeline,Water,Dilsukhnagar,2025-06-07,17.3688,78.5247
+132,Water supply interrupted for 3 days,Water,Miyapur,2026-01-22,17.4969,78.3562
+133,Drinking water contamination reported,Water,Secunderabad,2025-11-13,17.4399,78.4983
+134,Water leakage from main pipeline,Water,Dilsukhnagar,2025-12-08,17.3688,78.5247
+135,Low water pressure affecting households,Water,Jubilee Hills,2025-11-04,17.4316,78.4071
+136,Water leakage from main pipeline,Water,Ameerpet,2025-07-31,17.4375,78.4482
+137,Water leakage from main pipeline,Water,Ameerpet,2025-06-06,17.4375,78.4482
+138,Water supply interrupted for 3 days,Water,Madhapur,2026-03-25,17.4483,78.3915
+139,Water supply interrupted for 3 days,Water,Miyapur,2025-12-18,17.4969,78.3562
+140,Low water pressure affecting households,Water,Banjara Hills,2026-05-19,17.4126,78.4482
+141,No drinking water available in locality,Water,Manikonda,2026-02-18,17.4062,78.39
+142,Low water pressure affecting households,Water,Madhapur,2025-10-14,17.4483,78.3915
+143,Low water pressure affecting households,Water,Ameerpet,2026-02-02,17.4375,78.4482
+144,Drinking water contamination reported,Water,Dilsukhnagar,2025-12-23,17.3688,78.5247
+145,Low water pressure affecting households,Water,Hitech City,2026-04-08,17.4435,78.3772
+146,Water supply interrupted for 3 days,Water,Panjagutta,2025-10-27,17.4283,78.4524
+147,No drinking water available in locality,Water,Jubilee Hills,2025-11-04,17.4316,78.4071
+148,Low water pressure affecting households,Water,Miyapur,2025-09-02,17.4969,78.3562
+149,Water supply interrupted for 3 days,Water,Ameerpet,2026-02-13,17.4375,78.4482
+150,Low water pressure affecting households,Water,Panjagutta,2025-08-26,17.4283,78.4524
+151,Water leakage from main pipeline,Water,Kompally,2025-08-30,17.5251,78.4832
+152,Water supply interrupted for 3 days,Water,Madhapur,2026-05-28,17.4483,78.3915
+153,Drinking water contamination reported,Water,Madhapur,2026-03-05,17.4483,78.3915
+154,Low water pressure affecting households,Water,Miyapur,2026-03-27,17.4969,78.3562
+155,No drinking water available in locality,Water,Kondapur,2025-06-03,17.466,78.363
+156,Low water pressure affecting households,Water,Miyapur,2025-09-08,17.4969,78.3562
+157,No drinking water available in locality,Water,Banjara Hills,2026-03-01,17.4126,78.4482
+158,Water leakage from main pipeline,Water,LB Nagar,2025-11-01,17.3457,78.552
+159,No drinking water available in locality,Water,Jubilee Hills,2026-04-10,17.4316,78.4071
+160,Low water pressure affecting households,Water,Kondapur,2025-10-19,17.466,78.363
+161,Drinking water contamination reported,Water,Banjara Hills,2025-12-19,17.4126,78.4482
+162,Low water pressure affecting households,Water,Ameerpet,2026-05-18,17.4375,78.4482
+163,Water supply interrupted for 3 days,Water,Jubilee Hills,2026-03-14,17.4316,78.4071
+164,Drinking water contamination reported,Water,Kukatpally,2025-08-29,17.4948,78.3996
+165,Low water pressure affecting households,Water,Panjagutta,2026-05-13,17.4283,78.4524
+166,Low water pressure affecting households,Water,Manikonda,2025-09-28,17.4062,78.39
+167,Low water pressure affecting households,Water,LB Nagar,2026-03-19,17.3457,78.552
+168,No drinking water available in locality,Water,Jubilee Hills,2026-01-11,17.4316,78.4071
+169,Drinking water contamination reported,Water,Panjagutta,2025-08-08,17.4283,78.4524
+170,Water leakage from main pipeline,Water,Kompally,2025-08-23,17.5251,78.4832
+171,Water leakage from main pipeline,Water,Kompally,2025-12-11,17.5251,78.4832
+172,No drinking water available in locality,Water,Banjara Hills,2026-04-29,17.4126,78.4482
+173,Drinking water contamination reported,Water,Panjagutta,2025-07-29,17.4283,78.4524
+174,No drinking water available in locality,Water,Kukatpally,2025-12-15,17.4948,78.3996
+175,No drinking water available in locality,Water,Secunderabad,2025-12-17,17.4399,78.4983
+176,Low water pressure affecting households,Water,Dilsukhnagar,2025-09-20,17.3688,78.5247
+177,Water supply interrupted for 3 days,Water,Kukatpally,2026-03-12,17.4948,78.3996
+178,Water leakage from main pipeline,Water,Ameerpet,2026-04-21,17.4375,78.4482
+179,Water supply interrupted for 3 days,Water,Kondapur,2026-03-26,17.466,78.363
+180,Low water pressure affecting households,Water,Dilsukhnagar,2026-01-13,17.3688,78.5247
+181,Low water pressure affecting households,Water,Ameerpet,2025-06-12,17.4375,78.4482
+182,Water supply interrupted for 3 days,Water,Ameerpet,2026-01-17,17.4375,78.4482
+183,Low water pressure affecting households,Water,Manikonda,2026-04-14,17.4062,78.39
+184,Low water pressure affecting households,Water,Hitech City,2025-11-21,17.4435,78.3772
+185,No drinking water available in locality,Water,Hitech City,2025-11-21,17.4435,78.3772
+186,Drinking water contamination reported,Water,Ameerpet,2026-01-18,17.4375,78.4482
+187,Low water pressure affecting households,Water,LB Nagar,2025-11-14,17.3457,78.552
+188,Low water pressure affecting households,Water,LB Nagar,2025-08-08,17.3457,78.552
+189,Water supply interrupted for 3 days,Water,Secunderabad,2026-03-29,17.4399,78.4983
+190,No drinking water available in locality,Water,Banjara Hills,2026-02-10,17.4126,78.4482
+191,Drinking water contamination reported,Water,Gachibowli,2025-10-08,17.4401,78.3489
+192,Drinking water contamination reported,Water,Dilsukhnagar,2025-06-17,17.3688,78.5247
+193,Water supply interrupted for 3 days,Water,Ameerpet,2025-07-04,17.4375,78.4482
+194,Water leakage from main pipeline,Water,Panjagutta,2026-03-12,17.4283,78.4524
+195,No drinking water available in locality,Water,LB Nagar,2026-01-14,17.3457,78.552
+196,No drinking water available in locality,Water,Gachibowli,2026-05-24,17.4401,78.3489
+197,No drinking water available in locality,Water,Uppal,2026-01-18,17.4058,78.5591
+198,Water leakage from main pipeline,Water,Banjara Hills,2026-05-13,17.4126,78.4482
+199,Water supply interrupted for 3 days,Water,Dilsukhnagar,2026-03-10,17.3688,78.5247
+200,Low water pressure affecting households,Water,Uppal,2025-07-15,17.4058,78.5591
+201,No drinking water available in locality,Water,Gachibowli,2025-06-03,17.4401,78.3489
+202,Water leakage from main pipeline,Water,Banjara Hills,2025-07-26,17.4126,78.4482
+203,Drinking water contamination reported,Water,Kukatpally,2025-06-12,17.4948,78.3996
+204,No drinking water available in locality,Water,Ameerpet,2026-01-02,17.4375,78.4482
+205,No drinking water available in locality,Water,Uppal,2025-10-27,17.4058,78.5591
+206,Water leakage from main pipeline,Water,Jubilee Hills,2026-05-16,17.4316,78.4071
+207,Drinking water contamination reported,Water,Ameerpet,2025-11-26,17.4375,78.4482
+208,Water leakage from main pipeline,Water,LB Nagar,2025-12-23,17.3457,78.552
+209,Drinking water contamination reported,Water,Madhapur,2026-03-26,17.4483,78.3915
+210,Water supply interrupted for 3 days,Water,Banjara Hills,2026-05-28,17.4126,78.4482
+211,Low water pressure affecting households,Water,Dilsukhnagar,2025-09-11,17.3688,78.5247
+212,No drinking water available in locality,Water,Banjara Hills,2025-11-13,17.4126,78.4482
+213,No drinking water available in locality,Water,Uppal,2026-01-07,17.4058,78.5591
+214,Low water pressure affecting households,Water,Miyapur,2025-08-13,17.4969,78.3562
+215,Low water pressure affecting households,Water,Kondapur,2025-09-07,17.466,78.363
+216,Water supply interrupted for 3 days,Water,Dilsukhnagar,2025-10-16,17.3688,78.5247
+217,Water supply interrupted for 3 days,Water,Gachibowli,2026-03-26,17.4401,78.3489
+218,Low water pressure affecting households,Water,Secunderabad,2025-10-03,17.4399,78.4983
+219,Low water pressure affecting households,Water,Gachibowli,2026-04-09,17.4401,78.3489
+220,Water supply interrupted for 3 days,Water,Miyapur,2025-11-15,17.4969,78.3562
+221,Water supply interrupted for 3 days,Water,LB Nagar,2025-06-10,17.3457,78.552
+222,Low water pressure affecting households,Water,Kondapur,2025-10-09,17.466,78.363
+223,Water leakage from main pipeline,Water,Banjara Hills,2025-11-16,17.4126,78.4482
+224,Low water pressure affecting households,Water,Ameerpet,2025-07-17,17.4375,78.4482
+225,Water supply interrupted for 3 days,Water,Panjagutta,2025-09-23,17.4283,78.4524
+226,Drinking water contamination reported,Water,Ameerpet,2026-04-27,17.4375,78.4482
+227,No drinking water available in locality,Water,LB Nagar,2026-05-10,17.3457,78.552
+228,Water leakage from main pipeline,Water,Madhapur,2025-10-31,17.4483,78.3915
+229,Water supply interrupted for 3 days,Water,Madhapur,2026-02-19,17.4483,78.3915
+230,Low water pressure affecting households,Water,Gachibowli,2026-01-27,17.4401,78.3489
+231,Low water pressure affecting households,Water,Secunderabad,2025-09-14,17.4399,78.4983
+232,Drinking water contamination reported,Water,Kondapur,2026-04-23,17.466,78.363
+233,Water supply interrupted for 3 days,Water,Secunderabad,2025-06-10,17.4399,78.4983
+234,Drinking water contamination reported,Water,Secunderabad,2026-01-03,17.4399,78.4983
+235,Low water pressure affecting households,Water,Madhapur,2025-10-18,17.4483,78.3915
+236,Drinking water contamination reported,Water,Dilsukhnagar,2026-03-24,17.3688,78.5247
+237,Water leakage from main pipeline,Water,Uppal,2026-05-15,17.4058,78.5591
+238,Drinking water contamination reported,Water,Jubilee Hills,2026-05-28,17.4316,78.4071
+239,Water leakage from main pipeline,Water,Banjara Hills,2025-09-27,17.4126,78.4482
+240,Low water pressure affecting households,Water,Jubilee Hills,2025-10-14,17.4316,78.4071
+241,Water leakage from main pipeline,Water,Ameerpet,2025-09-28,17.4375,78.4482
+242,Water supply interrupted for 3 days,Water,Banjara Hills,2025-11-18,17.4126,78.4482
+243,No drinking water available in locality,Water,Banjara Hills,2026-01-27,17.4126,78.4482
+244,Low water pressure affecting households,Water,Hitech City,2026-03-22,17.4435,78.3772
+245,Drinking water contamination reported,Water,Miyapur,2026-02-11,17.4969,78.3562
+246,Water supply interrupted for 3 days,Water,Madhapur,2025-10-16,17.4483,78.3915
+247,Low water pressure affecting households,Water,Jubilee Hills,2026-02-22,17.4316,78.4071
+248,Low water pressure affecting households,Water,Miyapur,2026-03-27,17.4969,78.3562
+249,No drinking water available in locality,Water,Miyapur,2026-03-02,17.4969,78.3562
+250,Water supply interrupted for 3 days,Water,Kompally,2026-01-09,17.5251,78.4832
+251,Overflowing dustbins near market,Garbage,Banjara Hills,2025-09-08,17.4126,78.4482
+252,Garbage not collected for a week,Garbage,Panjagutta,2026-05-03,17.4283,78.4524
+253,Illegal dumping of household waste,Garbage,Manikonda,2025-10-19,17.4062,78.39
+254,Illegal dumping of household waste,Garbage,Panjagutta,2025-08-01,17.4283,78.4524
+255,Waste accumulation causing foul smell,Garbage,Kukatpally,2025-11-13,17.4948,78.3996
+256,Garbage not collected for a week,Garbage,Secunderabad,2025-06-18,17.4399,78.4983
+257,Illegal dumping of household waste,Garbage,Kondapur,2025-09-03,17.466,78.363
+258,Overflowing dustbins near market,Garbage,LB Nagar,2026-02-18,17.3457,78.552
+259,Illegal dumping of household waste,Garbage,Manikonda,2025-09-27,17.4062,78.39
+260,Garbage not collected for a week,Garbage,Kondapur,2025-10-10,17.466,78.363
+261,Overflowing dustbins near market,Garbage,Dilsukhnagar,2025-10-17,17.3688,78.5247
+262,Overflowing dustbins near market,Garbage,Jubilee Hills,2025-06-22,17.4316,78.4071
+263,Overflowing dustbins near market,Garbage,Secunderabad,2026-02-10,17.4399,78.4983
+264,Garbage dumped near school,Garbage,Kukatpally,2026-02-03,17.4948,78.3996
+265,Overflowing dustbins near market,Garbage,Kukatpally,2026-02-04,17.4948,78.3996
+266,Overflowing dustbins near market,Garbage,Gachibowli,2026-04-02,17.4401,78.3489
+267,Garbage dumped near school,Garbage,Kondapur,2025-11-14,17.466,78.363
+268,Garbage not collected for a week,Garbage,Secunderabad,2026-02-09,17.4399,78.4983
+269,Garbage not collected for a week,Garbage,LB Nagar,2026-01-22,17.3457,78.552
+270,Waste accumulation causing foul smell,Garbage,Hitech City,2025-08-15,17.4435,78.3772
+271,Overflowing dustbins near market,Garbage,Uppal,2026-01-29,17.4058,78.5591
+272,Waste accumulation causing foul smell,Garbage,Gachibowli,2025-12-24,17.4401,78.3489
+273,Waste accumulation causing foul smell,Garbage,Secunderabad,2025-10-17,17.4399,78.4983
+274,Garbage not collected for a week,Garbage,Secunderabad,2026-05-15,17.4399,78.4983
+275,Garbage dumped near school,Garbage,Ameerpet,2025-11-21,17.4375,78.4482
+276,Illegal dumping of household waste,Garbage,Kukatpally,2025-10-11,17.4948,78.3996
+277,Overflowing dustbins near market,Garbage,Kondapur,2026-02-11,17.466,78.363
+278,Garbage dumped near school,Garbage,LB Nagar,2026-04-17,17.3457,78.552
+279,Garbage dumped near school,Garbage,Banjara Hills,2026-02-17,17.4126,78.4482
+280,Overflowing dustbins near market,Garbage,Banjara Hills,2026-04-24,17.4126,78.4482
+281,Waste accumulation causing foul smell,Garbage,Banjara Hills,2025-07-12,17.4126,78.4482
+282,Overflowing dustbins near market,Garbage,Kukatpally,2026-05-17,17.4948,78.3996
+283,Illegal dumping of household waste,Garbage,Dilsukhnagar,2026-01-31,17.3688,78.5247
+284,Garbage not collected for a week,Garbage,LB Nagar,2025-11-24,17.3457,78.552
+285,Overflowing dustbins near market,Garbage,Secunderabad,2026-03-08,17.4399,78.4983
+286,Waste accumulation causing foul smell,Garbage,Dilsukhnagar,2026-04-14,17.3688,78.5247
+287,Garbage dumped near school,Garbage,Miyapur,2026-05-10,17.4969,78.3562
+288,Overflowing dustbins near market,Garbage,Jubilee Hills,2026-03-07,17.4316,78.4071
+289,Overflowing dustbins near market,Garbage,Manikonda,2026-05-31,17.4062,78.39
+290,Waste accumulation causing foul smell,Garbage,Kondapur,2025-08-10,17.466,78.363
+291,Overflowing dustbins near market,Garbage,Kukatpally,2025-08-09,17.4948,78.3996
+292,Garbage dumped near school,Garbage,Banjara Hills,2025-11-12,17.4126,78.4482
+293,Illegal dumping of household waste,Garbage,Kompally,2026-02-04,17.5251,78.4832
+294,Overflowing dustbins near market,Garbage,Kukatpally,2025-08-29,17.4948,78.3996
+295,Waste accumulation causing foul smell,Garbage,Banjara Hills,2025-08-18,17.4126,78.4482
+296,Garbage not collected for a week,Garbage,Hitech City,2026-03-10,17.4435,78.3772
+297,Garbage dumped near school,Garbage,Ameerpet,2025-06-29,17.4375,78.4482
+298,Garbage not collected for a week,Garbage,Kondapur,2025-11-28,17.466,78.363
+299,Overflowing dustbins near market,Garbage,Madhapur,2025-06-13,17.4483,78.3915
+300,Garbage not collected for a week,Garbage,Banjara Hills,2025-08-26,17.4126,78.4482
+301,Illegal dumping of household waste,Garbage,Miyapur,2025-06-13,17.4969,78.3562
+302,Waste accumulation causing foul smell,Garbage,Miyapur,2025-08-26,17.4969,78.3562
+303,Illegal dumping of household waste,Garbage,Kondapur,2026-01-28,17.466,78.363
+304,Overflowing dustbins near market,Garbage,Kondapur,2025-11-30,17.466,78.363
+305,Overflowing dustbins near market,Garbage,Manikonda,2026-01-07,17.4062,78.39
+306,Waste accumulation causing foul smell,Garbage,Hitech City,2026-05-12,17.4435,78.3772
+307,Garbage dumped near school,Garbage,Banjara Hills,2025-07-31,17.4126,78.4482
+308,Illegal dumping of household waste,Garbage,Gachibowli,2026-04-16,17.4401,78.3489
+309,Illegal dumping of household waste,Garbage,Hitech City,2026-01-28,17.4435,78.3772
+310,Overflowing dustbins near market,Garbage,Miyapur,2025-06-22,17.4969,78.3562
+311,Garbage not collected for a week,Garbage,Secunderabad,2025-11-20,17.4399,78.4983
+312,Waste accumulation causing foul smell,Garbage,Hitech City,2026-03-10,17.4435,78.3772
+313,Garbage not collected for a week,Garbage,Dilsukhnagar,2026-03-29,17.3688,78.5247
+314,Waste accumulation causing foul smell,Garbage,Jubilee Hills,2026-01-07,17.4316,78.4071
+315,Waste accumulation causing foul smell,Garbage,Kondapur,2026-05-25,17.466,78.363
+316,Garbage dumped near school,Garbage,Miyapur,2026-04-05,17.4969,78.3562
+317,Garbage dumped near school,Garbage,Gachibowli,2026-01-02,17.4401,78.3489
+318,Illegal dumping of household waste,Garbage,Miyapur,2025-06-19,17.4969,78.3562
+319,Garbage not collected for a week,Garbage,Banjara Hills,2025-06-07,17.4126,78.4482
+320,Waste accumulation causing foul smell,Garbage,Miyapur,2026-01-18,17.4969,78.3562
+321,Overflowing dustbins near market,Garbage,Kukatpally,2025-12-28,17.4948,78.3996
+322,Illegal dumping of household waste,Garbage,Hitech City,2025-07-08,17.4435,78.3772
+323,Waste accumulation causing foul smell,Garbage,Banjara Hills,2026-05-26,17.4126,78.4482
+324,Overflowing dustbins near market,Garbage,Hitech City,2025-10-25,17.4435,78.3772
+325,Illegal dumping of household waste,Garbage,Hitech City,2025-12-30,17.4435,78.3772
+326,Illegal dumping of household waste,Garbage,Ameerpet,2025-10-28,17.4375,78.4482
+327,Overflowing dustbins near market,Garbage,Banjara Hills,2026-04-21,17.4126,78.4482
+328,Waste accumulation causing foul smell,Garbage,Secunderabad,2026-04-24,17.4399,78.4983
+329,Garbage dumped near school,Garbage,Dilsukhnagar,2026-01-01,17.3688,78.5247
+330,Garbage dumped near school,Garbage,Kukatpally,2026-01-17,17.4948,78.3996
+331,Illegal dumping of household waste,Garbage,Hitech City,2025-11-17,17.4435,78.3772
+332,Garbage dumped near school,Garbage,Hitech City,2026-04-30,17.4435,78.3772
+333,Overflowing dustbins near market,Garbage,Kompally,2026-05-16,17.5251,78.4832
+334,Illegal dumping of household waste,Garbage,Kukatpally,2026-05-09,17.4948,78.3996
+335,Garbage dumped near school,Garbage,Uppal,2025-09-17,17.4058,78.5591
+336,Overflowing dustbins near market,Garbage,Jubilee Hills,2026-05-22,17.4316,78.4071
+337,Garbage dumped near school,Garbage,Uppal,2025-09-17,17.4058,78.5591
+338,Garbage dumped near school,Garbage,Banjara Hills,2025-07-15,17.4126,78.4482
+339,Garbage dumped near school,Garbage,Manikonda,2025-09-28,17.4062,78.39
+340,Garbage dumped near school,Garbage,Uppal,2026-03-29,17.4058,78.5591
+341,Garbage dumped near school,Garbage,Madhapur,2025-09-22,17.4483,78.3915
+342,Overflowing dustbins near market,Garbage,Miyapur,2025-12-13,17.4969,78.3562
+343,Illegal dumping of household waste,Garbage,Kukatpally,2025-11-20,17.4948,78.3996
+344,Illegal dumping of household waste,Garbage,Secunderabad,2026-05-22,17.4399,78.4983
+345,Garbage not collected for a week,Garbage,Miyapur,2025-07-29,17.4969,78.3562
+346,Garbage not collected for a week,Garbage,Kondapur,2025-08-11,17.466,78.363
+347,Garbage not collected for a week,Garbage,Kompally,2025-10-02,17.5251,78.4832
+348,Waste accumulation causing foul smell,Garbage,Uppal,2025-11-25,17.4058,78.5591
+349,Illegal dumping of household waste,Garbage,Dilsukhnagar,2025-12-15,17.3688,78.5247
+350,Overflowing dustbins near market,Garbage,Miyapur,2025-09-29,17.4969,78.3562
+351,Electric pole damaged,Electricity,Madhapur,2026-03-05,17.4483,78.3915
+352,Voltage fluctuations affecting homes,Electricity,Jubilee Hills,2025-11-25,17.4316,78.4071
+353,Voltage fluctuations affecting homes,Electricity,Uppal,2026-02-27,17.4058,78.5591
+354,Street lights not working,Electricity,Uppal,2025-12-13,17.4058,78.5591
+355,Electric pole damaged,Electricity,Kukatpally,2026-01-13,17.4948,78.3996
+356,Transformer malfunction reported,Electricity,Banjara Hills,2026-01-12,17.4126,78.4482
+357,Transformer malfunction reported,Electricity,Jubilee Hills,2026-04-15,17.4316,78.4071
+358,Electric pole damaged,Electricity,Kukatpally,2025-12-06,17.4948,78.3996
+359,Electric pole damaged,Electricity,Miyapur,2025-07-18,17.4969,78.3562
+360,Voltage fluctuations affecting homes,Electricity,Miyapur,2026-03-28,17.4969,78.3562
+361,Transformer malfunction reported,Electricity,Hitech City,2026-01-09,17.4435,78.3772
+362,Transformer malfunction reported,Electricity,Jubilee Hills,2026-03-09,17.4316,78.4071
+363,Street lights not working,Electricity,Ameerpet,2026-02-22,17.4375,78.4482
+364,Voltage fluctuations affecting homes,Electricity,Uppal,2025-08-12,17.4058,78.5591
+365,Electric pole damaged,Electricity,Secunderabad,2025-12-19,17.4399,78.4983
+366,Street lights not working,Electricity,Madhapur,2025-09-05,17.4483,78.3915
+367,Street lights not working,Electricity,Jubilee Hills,2025-11-02,17.4316,78.4071
+368,Transformer malfunction reported,Electricity,Secunderabad,2026-04-10,17.4399,78.4983
+369,Transformer malfunction reported,Electricity,Miyapur,2025-09-05,17.4969,78.3562
+370,Transformer malfunction reported,Electricity,Uppal,2026-03-13,17.4058,78.5591
+371,Street lights not working,Electricity,Kompally,2026-04-16,17.5251,78.4832
+372,Electric pole damaged,Electricity,Panjagutta,2025-12-17,17.4283,78.4524
+373,Electric pole damaged,Electricity,Gachibowli,2026-01-30,17.4401,78.3489
+374,Electric pole damaged,Electricity,Manikonda,2026-04-24,17.4062,78.39
+375,Electric pole damaged,Electricity,Manikonda,2026-02-03,17.4062,78.39
+376,Transformer malfunction reported,Electricity,Hitech City,2025-12-15,17.4435,78.3772
+377,Transformer malfunction reported,Electricity,Miyapur,2026-05-04,17.4969,78.3562
+378,Street lights not working,Electricity,Manikonda,2025-07-30,17.4062,78.39
+379,Electric pole damaged,Electricity,Gachibowli,2026-05-01,17.4401,78.3489
+380,Frequent power cuts in colony,Electricity,Gachibowli,2025-08-28,17.4401,78.3489
+381,Frequent power cuts in colony,Electricity,Manikonda,2025-06-09,17.4062,78.39
+382,Electric pole damaged,Electricity,Madhapur,2025-06-15,17.4483,78.3915
+383,Transformer malfunction reported,Electricity,Uppal,2025-06-14,17.4058,78.5591
+384,Transformer malfunction reported,Electricity,Ameerpet,2026-02-21,17.4375,78.4482
+385,Frequent power cuts in colony,Electricity,Kompally,2026-04-26,17.5251,78.4832
+386,Electric pole damaged,Electricity,Jubilee Hills,2025-06-08,17.4316,78.4071
+387,Street lights not working,Electricity,Kompally,2025-10-15,17.5251,78.4832
+388,Transformer malfunction reported,Electricity,Panjagutta,2026-03-19,17.4283,78.4524
+389,Voltage fluctuations affecting homes,Electricity,Kukatpally,2025-10-09,17.4948,78.3996
+390,Street lights not working,Electricity,Gachibowli,2025-08-17,17.4401,78.3489
+391,Transformer malfunction reported,Electricity,Dilsukhnagar,2025-06-21,17.3688,78.5247
+392,Frequent power cuts in colony,Electricity,Madhapur,2025-09-11,17.4483,78.3915
+393,Street lights not working,Electricity,Uppal,2025-07-14,17.4058,78.5591
+394,Electric pole damaged,Electricity,Uppal,2025-09-19,17.4058,78.5591
+395,Electric pole damaged,Electricity,Madhapur,2025-11-24,17.4483,78.3915
+396,Electric pole damaged,Electricity,Madhapur,2026-03-19,17.4483,78.3915
+397,Electric pole damaged,Electricity,Manikonda,2026-04-06,17.4062,78.39
+398,Frequent power cuts in colony,Electricity,Panjagutta,2025-08-22,17.4283,78.4524
+399,Transformer malfunction reported,Electricity,Uppal,2026-03-17,17.4058,78.5591
+400,Electric pole damaged,Electricity,Ameerpet,2025-10-18,17.4375,78.4482
+401,Transformer malfunction reported,Electricity,Madhapur,2025-10-02,17.4483,78.3915
+402,Transformer malfunction reported,Electricity,Madhapur,2026-05-02,17.4483,78.3915
+403,Transformer malfunction reported,Electricity,Manikonda,2026-05-30,17.4062,78.39
+404,Transformer malfunction reported,Electricity,Dilsukhnagar,2025-12-05,17.3688,78.5247
+405,Street lights not working,Electricity,Kondapur,2026-04-21,17.466,78.363
+406,Frequent power cuts in colony,Electricity,Panjagutta,2025-07-20,17.4283,78.4524
+407,Frequent power cuts in colony,Electricity,Hitech City,2025-09-29,17.4435,78.3772
+408,Street lights not working,Electricity,Hitech City,2026-05-21,17.4435,78.3772
+409,Electric pole damaged,Electricity,Manikonda,2026-03-25,17.4062,78.39
+410,Voltage fluctuations affecting homes,Electricity,Madhapur,2025-08-28,17.4483,78.3915
+411,Transformer malfunction reported,Electricity,Kompally,2025-10-13,17.5251,78.4832
+412,Frequent power cuts in colony,Electricity,Hitech City,2025-12-13,17.4435,78.3772
+413,Frequent power cuts in colony,Electricity,Madhapur,2025-10-18,17.4483,78.3915
+414,Transformer malfunction reported,Electricity,Miyapur,2025-08-22,17.4969,78.3562
+415,Street lights not working,Electricity,LB Nagar,2025-06-21,17.3457,78.552
+416,Street lights not working,Electricity,Secunderabad,2025-10-07,17.4399,78.4983
+417,Street lights not working,Electricity,Banjara Hills,2025-07-13,17.4126,78.4482
+418,Voltage fluctuations affecting homes,Electricity,Kompally,2025-12-13,17.5251,78.4832
+419,Voltage fluctuations affecting homes,Electricity,Ameerpet,2025-11-04,17.4375,78.4482
+420,Street lights not working,Electricity,Kukatpally,2025-07-12,17.4948,78.3996
+421,Electric pole damaged,Electricity,Jubilee Hills,2025-07-23,17.4316,78.4071
+422,Electric pole damaged,Electricity,Banjara Hills,2025-09-01,17.4126,78.4482
+423,Street lights not working,Electricity,Manikonda,2025-06-23,17.4062,78.39
+424,Street lights not working,Electricity,Jubilee Hills,2026-01-08,17.4316,78.4071
+425,Street lights not working,Electricity,Dilsukhnagar,2025-11-24,17.3688,78.5247
+426,Voltage fluctuations affecting homes,Electricity,Jubilee Hills,2025-08-13,17.4316,78.4071
+427,Electric pole damaged,Electricity,Jubilee Hills,2026-03-26,17.4316,78.4071
+428,Street lights not working,Electricity,Secunderabad,2025-11-23,17.4399,78.4983
+429,Transformer malfunction reported,Electricity,LB Nagar,2025-12-06,17.3457,78.552
+430,Street lights not working,Electricity,LB Nagar,2025-09-04,17.3457,78.552
+431,Traffic signal malfunctioning,Traffic,Kompally,2026-04-17,17.5251,78.4832
+432,Roadside encroachment causing congestion,Traffic,Dilsukhnagar,2026-05-22,17.3688,78.5247
+433,Traffic signal malfunctioning,Traffic,Hitech City,2025-10-12,17.4435,78.3772
+434,Traffic management required at junction,Traffic,Ameerpet,2026-02-25,17.4375,78.4482
+435,Heavy traffic congestion during peak hours,Traffic,LB Nagar,2026-02-08,17.3457,78.552
+436,Heavy traffic congestion during peak hours,Traffic,Manikonda,2025-11-26,17.4062,78.39
+437,Traffic management required at junction,Traffic,Kondapur,2025-09-07,17.466,78.363
+438,Heavy traffic congestion during peak hours,Traffic,Miyapur,2025-06-07,17.4969,78.3562
+439,Heavy traffic congestion during peak hours,Traffic,Ameerpet,2025-09-01,17.4375,78.4482
+440,Heavy traffic congestion during peak hours,Traffic,Secunderabad,2025-11-25,17.4399,78.4983
+441,Traffic signal malfunctioning,Traffic,Jubilee Hills,2025-11-10,17.4316,78.4071
+442,Traffic management required at junction,Traffic,Gachibowli,2026-03-20,17.4401,78.3489
+443,Roadside encroachment causing congestion,Traffic,Gachibowli,2025-08-29,17.4401,78.3489
+444,Roadside encroachment causing congestion,Traffic,LB Nagar,2025-08-21,17.3457,78.552
+445,Illegal parking blocking road,Traffic,Dilsukhnagar,2026-03-25,17.3688,78.5247
+446,Roadside encroachment causing congestion,Traffic,Uppal,2026-03-06,17.4058,78.5591
+447,Traffic signal malfunctioning,Traffic,Panjagutta,2025-10-22,17.4283,78.4524
+448,Traffic signal malfunctioning,Traffic,Manikonda,2025-11-14,17.4062,78.39
+449,Roadside encroachment causing congestion,Traffic,Gachibowli,2026-05-05,17.4401,78.3489
+450,Illegal parking blocking road,Traffic,Kompally,2026-04-17,17.5251,78.4832
+451,Traffic management required at junction,Traffic,Manikonda,2026-01-06,17.4062,78.39
+452,Illegal parking blocking road,Traffic,Jubilee Hills,2025-11-11,17.4316,78.4071
+453,Illegal parking blocking road,Traffic,Secunderabad,2025-06-30,17.4399,78.4983
+454,Traffic signal malfunctioning,Traffic,Uppal,2026-03-04,17.4058,78.5591
+455,Heavy traffic congestion during peak hours,Traffic,Dilsukhnagar,2025-08-01,17.3688,78.5247
+456,Roadside encroachment causing congestion,Traffic,Miyapur,2025-09-11,17.4969,78.3562
+457,Roadside encroachment causing congestion,Traffic,Banjara Hills,2025-11-16,17.4126,78.4482
+458,Traffic management required at junction,Traffic,Ameerpet,2026-01-18,17.4375,78.4482
+459,Traffic management required at junction,Traffic,Gachibowli,2026-02-11,17.4401,78.3489
+460,Roadside encroachment causing congestion,Traffic,Ameerpet,2025-10-22,17.4375,78.4482
+461,Heavy traffic congestion during peak hours,Traffic,Dilsukhnagar,2025-12-05,17.3688,78.5247
+462,Heavy traffic congestion during peak hours,Traffic,Kukatpally,2025-11-17,17.4948,78.3996
+463,Traffic signal malfunctioning,Traffic,Madhapur,2025-07-12,17.4483,78.3915
+464,Traffic management required at junction,Traffic,Uppal,2025-07-16,17.4058,78.5591
+465,Heavy traffic congestion during peak hours,Traffic,Manikonda,2026-03-19,17.4062,78.39
+466,Illegal parking blocking road,Traffic,Jubilee Hills,2025-09-14,17.4316,78.4071
+467,Heavy traffic congestion during peak hours,Traffic,Gachibowli,2026-01-02,17.4401,78.3489
+468,Roadside encroachment causing congestion,Traffic,Ameerpet,2025-11-06,17.4375,78.4482
+469,Heavy traffic congestion during peak hours,Traffic,Uppal,2026-04-20,17.4058,78.5591
+470,Heavy traffic congestion during peak hours,Traffic,Manikonda,2025-06-10,17.4062,78.39
+471,Roadside encroachment causing congestion,Traffic,Jubilee Hills,2026-04-15,17.4316,78.4071
+472,Traffic management required at junction,Traffic,Dilsukhnagar,2025-10-01,17.3688,78.5247
+473,Roadside encroachment causing congestion,Traffic,Dilsukhnagar,2026-05-03,17.3688,78.5247
+474,Illegal parking blocking road,Traffic,Uppal,2026-03-23,17.4058,78.5591
+475,Illegal parking blocking road,Traffic,Panjagutta,2026-03-01,17.4283,78.4524
+476,Roadside encroachment causing congestion,Traffic,Dilsukhnagar,2025-12-04,17.3688,78.5247
+477,Roadside encroachment causing congestion,Traffic,Ameerpet,2025-10-30,17.4375,78.4482
+478,Roadside encroachment causing congestion,Traffic,Manikonda,2025-08-22,17.4062,78.39
+479,Illegal parking blocking road,Traffic,Ameerpet,2025-06-15,17.4375,78.4482
+480,Traffic management required at junction,Traffic,Kukatpally,2025-11-05,17.4948,78.3996
+481,Illegal parking blocking road,Traffic,Kompally,2025-08-20,17.5251,78.4832
+482,Traffic management required at junction,Traffic,Gachibowli,2025-12-21,17.4401,78.3489
+483,Traffic signal malfunctioning,Traffic,Kukatpally,2025-07-22,17.4948,78.3996
+484,Roadside encroachment causing congestion,Traffic,Dilsukhnagar,2025-08-11,17.3688,78.5247
+485,Traffic management required at junction,Traffic,Madhapur,2026-02-09,17.4483,78.3915
+486,Heavy traffic congestion during peak hours,Traffic,Hitech City,2025-07-10,17.4435,78.3772
+487,Illegal parking blocking road,Traffic,Panjagutta,2026-04-06,17.4283,78.4524
+488,Heavy traffic congestion during peak hours,Traffic,Miyapur,2025-06-21,17.4969,78.3562
+489,Traffic management required at junction,Traffic,Banjara Hills,2025-09-15,17.4126,78.4482
+490,Traffic signal malfunctioning,Traffic,LB Nagar,2026-01-04,17.3457,78.552
+491,Traffic management required at junction,Traffic,Madhapur,2025-08-24,17.4483,78.3915
+492,Traffic management required at junction,Traffic,Uppal,2025-12-05,17.4058,78.5591
+493,Illegal parking blocking road,Traffic,Manikonda,2025-10-14,17.4062,78.39
+494,Traffic management required at junction,Traffic,Uppal,2025-09-21,17.4058,78.5591
+495,Heavy traffic congestion during peak hours,Traffic,Secunderabad,2026-01-08,17.4399,78.4983
+496,Illegal parking blocking road,Traffic,Uppal,2025-07-06,17.4058,78.5591
+497,Heavy traffic congestion during peak hours,Traffic,Gachibowli,2025-11-25,17.4401,78.3489
+498,Traffic management required at junction,Traffic,Jubilee Hills,2025-06-13,17.4316,78.4071
+499,Heavy traffic congestion during peak hours,Traffic,LB Nagar,2025-06-25,17.3457,78.552
+500,Traffic signal malfunctioning,Traffic,Manikonda,2025-08-28,17.4062,78.39

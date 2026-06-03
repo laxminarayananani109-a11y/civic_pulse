@@ -6,7 +6,9 @@ Civic Pulse is an AI-powered CivicTech platform that helps authorities identify,
 
 ## Problem Statement
 
-Civic complaints are often scattered across multiple platforms, making it difficult for authorities to identify critical issues and respond efficiently.
+Citizens often face difficulties reporting civic issues and tracking their resolution status. Complaints are scattered across multiple channels, making it difficult to identify recurring problems and prioritize actions.
+
+Civic Pulse provides a centralized platform for reporting, monitoring, and analyzing civic complaints to improve transparency and public service delivery.
 
 ## Proposed Solution
 

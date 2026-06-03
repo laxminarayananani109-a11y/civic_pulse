@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Civic Pulse Constitution
 
 ## Code Quality
@@ -32,3 +33,22 @@
 
 * Document APIs, setup instructions, and deployment steps.
 * Maintain clear README and project documentation.
+=======
+\# Project Constitution
+
+
+
+\## Principles
+
+
+
+1\. Code Quality
+
+2\. Documentation First
+
+3\. Open Source Compliance
+
+4\. Security
+
+5\. Testing
+>>>>>>> origin/main
