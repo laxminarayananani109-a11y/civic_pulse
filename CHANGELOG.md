@@ -1,4 +1,10 @@
 # Changelog
 
 ## v1.0.0
-- Initial release
+
+### Added
+- Civic Pulse initial release
+- Complaint submission system
+- AI classification
+- Dashboard analytics
+- Heatmap visualization

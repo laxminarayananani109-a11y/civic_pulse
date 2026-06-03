@@ -1,5 +1,4 @@
 import streamlit as st
-from utils.database import get_total_complaints
 from utils.database import get_total_complaints, get_total_locations
 
 total_complaints = get_total_complaints()
@@ -29,7 +28,7 @@ margin-top:20px;
 <h1 style="
 font-size:60px;
 margin-bottom:10px;
-color:white;
+color:#111827;
 font-weight:800;
 ">
 📍 Civic Pulse
