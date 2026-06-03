@@ -11,6 +11,7 @@ stages:
 
 before_script:
   - python --version
+  - python -m pip install --upgrade "pip>=26.1"
   - pip install ruff mypy bandit pip-audit pytest pytest-cov pylint
   
 
