@@ -1,8 +1,11 @@
 image: python:3.12
 
 stages:
+  - lint
+  - format
+  - type_check
+  - security
   - quality
-  - security 
   - test
   - coverage
 
@@ -13,24 +16,19 @@ before_script:
   
 
 lint:
-  stage: quality
+  stage: lint
   script:
     - ruff check .
 
 format:
-  stage: quality
+  stage: format
   script:
     - ruff format --check .
 
 type_check:
-  stage: quality
+  stage: type_check
   script:
     - mypy .
-
-quality:
-  stage: quality
-  script: 
-    -  pylint .
 
 security:
   stage: security
@@ -42,8 +40,13 @@ dependency_audit:
   script:
     - pip-audit
 
+quality:
+  stage: quality
+  script: 
+    -  pylint .
+
 test:
-  stage: coverage
+  stage: test
   script:
     - pytest
 
