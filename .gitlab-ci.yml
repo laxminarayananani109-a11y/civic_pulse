@@ -1,31 +1,60 @@
 image: python:3.12
 
 stages:
+  - lint
+  - format
+  - type_check
+  - security
+  - quality
   - test
+  - coverage
 
 before_script:
   - python --version
-  - pip install ruff bandit pip-audit pytest pytest-cov
+  - python -m pip install --upgrade "pip>=26.1"
+  - pip install ruff mypy bandit pip-audit pytest pytest-cov pylint
+  
 
 lint:
-  stage: test
+  stage: lint
   script:
     - ruff check .
 
+format:
+  stage: format
+  script:
+    - ruff format --check .
+
+type_check:
+  stage: type_check
+  script:
+    - mypy .
+
 security:
-  stage: test
+  stage: security
   script:
     - bandit -r .
 
 dependency_audit:
-  stage: test
+  stage: security
   script:
     - pip-audit
 
-coverage_report:
+quality:
+  stage: quality
+  script: 
+    -  pylint .
+
+test:
   stage: test
   script:
-    - pytest --cov=. --cov-report=xml || true
+    - pytest
+
+coverage_report:
+  stage: coverage
+  script:
+    - pytest --cov=. --cov-report=xml
+
   artifacts:
     paths:
       - coverage.xml

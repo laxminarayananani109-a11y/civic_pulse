@@ -1,0 +1,260 @@
+[33mtag v1.0.0[m
+Tagger: noelpaul <noelpaulnp075@gmail.com>
+Date:   Wed Jun 3 10:49:29 2026 +0530
+
+First release
+
+[33mcommit 7b52f4eb618326ce6222fdb4653721d558cc1af6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmy-feature-branch[m[33m, [m[1;33mtag: [m[1;33mv1.0.0[m[33m, [m[1;31morigin/my-feature-branch[m[33m)[m
+Author: noelpaul <noelpaulnp075@gmail.com>
+Date:   Wed Jun 3 10:22:47 2026 +0530
+
+    Fix Bandit security warnings
+
+[1mdiff --git a/complaints_500.csv b/complaints_500.csv[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fed2523[m
+[1m--- /dev/null[m
+[1m+++ b/complaints_500.csv[m
+[36m@@ -0,0 +1,501 @@[m
+[32m+[m[32mid,description,category,location,date,latitude,longitude[m
+[32m+[m[32m1,Broken road near residential area,Roads,Secunderabad,2025-09-05,17.4399,78.4983[m
+[32m+[m[32m2,Road repair work incomplete,Roads,Uppal,2025-12-23,17.4058,78.5591[m
+[32m+[m[32m3,Road repair work incomplete,Roads,Kondapur,2026-01-18,17.466,78.363[m
+[32m+[m[32m4,Road repair work incomplete,Roads,LB Nagar,2025-06-04,17.3457,78.552[m
+[32m+[m[32m5,Road damaged after recent rains,Roads,Panjagutta,2025-12-07,17.4283,78.4524[m
+[32m+[m[32m6,Uneven road surface creating traffic issues,Roads,Uppal,2025-08-24,17.4058,78.5591[m
+[32m+[m[32m7,Large pothole causing accidents,Roads,Uppal,2025-12-17,17.4058,78.5591[m
+[32m+[m[32m8,Road damaged after recent rains,Roads,Banjara Hills,2026-03-14,17.4126,78.4482[m
+[32m+[m[32m9,Uneven road surface creating traffic issues,Roads,Banjara Hills,2026-01-23,17.4126,78.4482[m
+[32m+[m[32m10,Uneven road surface creating traffic issues,Roads,Dilsukhnagar,2026-05-13,17.3688,78.5247[m
+[32m+[m[32m11,Large pothole causing accidents,Roads,Banjara Hills,2025-07-21,17.4126,78.4482[m
+[32m+[m[32m12,Broken road near residential area,Roads,Manikonda,2025-10-29,17.4062,78.39[m
+[32m+[m[32m13,Road damaged after recent rains,Roads,Miyapur,2026-03-13,17.4969,78.3562[m
+[32m+[m[32m14,Broken road near residential area,Roads,Hitech City,2025-09-20,17.4435,78.3772[m
+[32m+[m[32m15,Uneven road surface creating traffic issues,Roads,Secunderabad,2026-04-15,17.4399,78.4983[m
+[32m+[m[32m16,Large pothole causing accidents,Roads,Kompally,2025-11-21,17.5251,78.4832[m
+[32m+[m[32m17,Uneven road surface creating traffic issues,Roads,Banjara Hills,2026-05-05,17.4126,78.4482[m
+[32m+[m[32m18,Road repair work incomplete,Roads,Jubilee Hills,2025-08-13,17.4316,78.4071[m
+[32m+[m[32m19,Large pothole causing accidents,Roads,Dilsukhnagar,2026-04-07,17.3688,78.5247[m
+[32m+[m[32m20,Road damaged after recent rains,Roads,LB Nagar,2026-02-20,17.3457,78.552[m
+[32m+[m[32m21,Road damaged after recent rains,Roads,Kondapur,2026-03-22,17.466,78.363[m
+[32m+[m[32m22,Road repair work incomplete,Roads,Secunderabad,2026-01-28,17.4399,78.4983[m
+[32m+[m[32m23,Road damaged after recent rains,Roads,Panjagutta,2025-12-13,17.4283,78.4524[m
+[32m+[m[32m24,Broken road near residential area,Roads,Kompally,2025-11-07,17.5251,78.4832[m
+[32m+[m[32m25,Large pothole causing accidents,Roads,Kukatpally,2026-01-30,17.4948,78.3996[m
+[32m+[m[32m26,Road damaged after recent rains,Roads,Ameerpet,2025-07-05,17.4375,78.4482[m
+[32m+[m[32m27,Broken road near residential area,Roads,Madhapur,2025-11-29,17.4483,78.3915[m
+[32m+[m[32m28,Road damaged after recent rains,Roads,Gachibowli,2026-03-14,17.4401,78.3489[m
+[32m+[m[32m29,Road repair work incomplete,Roads,Kukatpally,2026-04-24,17.4948,78.3996[m
+[32m+[m[32m30,Road repair work incomplete,Roads,Banjara Hills,2025-09-29,17.4126,78.4482[m
+[32m+[m[32m31,Broken road near residential area,Roads,Kondapur,2026-01-22,17.466,78.363[m
+[32m+[m[32m32,Uneven road surface creating traffic issues,Roads,Gachibowli,2025-08-31,17.4401,78.3489[m
+[32m+[m[32m33,Large pothole causing accidents,Roads,Dilsukhnagar,2025-11-24,17.3688,78.5247[m
+[32m+[m[32m34,Road damaged after recent rains,Roads,Miyapur,2026-02-14,17.4969,78.3562[m
+[32m+[m[32m35,Broken road near residential area,Roads,Kondapur,2026-04-16,17.466,78.363[m
+[32m+[m[32m36,Uneven road surface creating traffic issues,Roads,Gachibowli,2025-11-30,17.4401,78.3489[m
+[32m+[m[32m37,Broken road near residential area,Roads,Dilsukhnagar,2025-06-09,17.3688,78.5247[m
+[32m+[m[32m38,Road repair work incomplete,Roads,Dilsukhnagar,2025-09-14,17.3688,78.5247[m
+[32m+[m[32m39,Road repair work incomplete,Roads,Ameerpet,2026-04-12,17.4375,78.4482[m
+[32m+[m[32m40,Large pothole causing accidents,Roads,Kompally,2025-06-08,17.5251,78.4832[m
+[32m+[m[32m41,Broken road near residential area,Roads,Ameerpet,2025-06-12,17.4375,78.4482[m
+[32m+[m[32m42,Large pothole causing accidents,Roads,Banjara Hills,2025-12-04,17.4126,78.4482[m
+[32m+[m[32m43,Road damaged after recent rains,Roads,Ameerpet,2025-06-23,17.4375,78.4482[m
+[32m+[m[32m44,Road damaged after recent rains,Roads,Secunderabad,2025-08-06,17.4399,78.4983[m
+[32m+[m[32m45,Road damaged after recent rains,Roads,Kompally,2025-12-16,17.5251,78.4832[m
+[32m+[m[32m46,Broken road near residential area,Roads,Gachibowli,2026-02-17,17.4401,78.3489[m
+[32m+[m[32m47,Road damaged after recent rains,Roads,Ameerpet,2026-03-22,17.4375,78.4482[m
+[32m+[m[32m48,Broken road near residential area,Roads,Kompally,2025-10-13,17.5251,78.4832[m
+[32m+[m[32m49,Road repair work incomplete,Roads,Manikonda,2026-04-19,17.4062,78.39[m
+[32m+[m[32m50,Large pothole causing accidents,Roads,Ameerpet,2025-11-18,17.4375,78.4482[m
+[32m+[m[32m51,Road repair work incomplete,Roads,Uppal,2025-12-27,17.4058,78.5591[m
+[32m+[m[32m52,Road repair work incomplete,Roads,Kondapur,2025-07-02,17.466,78.363[m
+[32m+[m[32m53,Uneven road surface creating traffic issues,Roads,Ameerpet,2026-04-23,17.4375,78.4482[m
+[32m+[m[32m54,Road repair work incomplete,Roads,Hitech City,2026-01-22,17.4435,78.3772[m
+[32m+[m[32m55,Broken road near residential area,Roads,Banjara Hills,2026-02-21,17.4126,78.4482[m
+[32m+[m[32m56,Large pothole causing accidents,Roads,Panjagutta,2026-01-03,17.4283,78.4524[m
+[32m+[m[32m57,Uneven road surface creating traffic issues,Roads,Kondapur,2025-11-26,17.466,78.363[m
+[32m+[m[32m58,Large pothole causing accidents,Roads,Secunderabad,2025-12-28,17.4399,78.4983[m
+[32m+[m[32m59,Large pothole causing accidents,Roads,Kondapur,2026-02-15,17.466,78.363[m
+[32m+[m[32m60,Broken road near residential area,Roads,Secunderabad,2025-06-28,17.4399,78.4983[m
+[32m+[m[32m61,Large pothole causing accidents,Roads,Miyapur,2025-08-23,17.4969,78.3562[m
+[32m+[m[32m62,Road damaged after recent rains,Roads,Madhapur,2025-07-05,17.4483,78.3915[m
+[32m+[m[32m63,Road damaged after recent rains,Roads,Secunderabad,2025-12-30,17.4399,78.4983[m
+[32m+[m[32m64,Road damaged after recent rains,Roads,Ameerpet,2025-07-20,17.4375,78.4482[m
+[32m+[m[32m65,Uneven road surface creating traffic issues,Roads,LB Nagar,2026-04-18,17.3457,78.552[m
+[32m+[m[32m66,Uneven road surface creating traffic issues,Roads,Hitech City,2026-03-02,17.4435,78.3772[m
+[32m+[m[32m67,Large pothole causing accidents,Roads,Gachibowli,2026-05-28,17.4401,78.3489[m
+[32m+[m[32m68,Road repair work incomplete,Roads,Kondapur,2025-09-12,17.466,78.363[m
+[32m+[m[32m69,Road damaged after recent rains,Roads,Gachibowli,2026-01-19,17.4401,78.3489[m
+[32m+[m[32m70,Uneven road surface creating traffic issues,Roads,Kompally,2026-05-19,17.5251,78.4832[m
+[32m+[m[32m71,Road damaged after recent rains,Roads,Gachibowli,2025-12-26,17.4401,78.3489[m
+[32m+[m[32m72,Road damaged after recent rains,Roads,Ameerpet,2025-11-22,17.4375,78.4482[m
+[32m+[m[32m73,Large pothole causing accidents,Roads,Uppal,2026-03-28,17.4058,78.5591[m
+[32m+[m[32m74,Broken road near residential area,Roads,Miyapur,2026-02-10,17.4969,78.3562[m
+[32m+[m[32m75,Road damaged after recent rains,Roads,Manikonda,2025-11-15,17.4062,78.39[m
+[32m+[m[32m76,Uneven road surface creating traffic issues,Roads,Kukatpally,2025-10-04,17.4948,78.3996[m
+[32m+[m[32m77,Broken road near residential area,Roads,Dilsukhnagar,2026-02-07,17.3688,78.5247[m
+[32m+[m[32m78,Large pothole causing accidents,Roads,Secunderabad,2025-06-10,17.4399,78.4983[m
+[32m+[m[32m79,Road damaged after recent rains,Roads,Kompally,2025-11-05,17.5251,78.4832[m
+[32m+[m[32m80,Large pothole causing accidents,Roads,Madhapur,2025-12-31,17.4483,78.3915[m
+[32m+[m[32m81,Road repair work incomplete,Roads,Secunderabad,2025-06-05,17.4399,78.4983[m
+[32m+[m[32m82,Road damaged after recent rains,Roads,Manikonda,2025-08-08,17.4062,78.39[m
+[32m+[m[32m83,Broken road near residential area,Roads,Dilsukhnagar,2026-01-28,17.3688,78.5247[m
+[32m+[m[32m84,Road repair work incomplete,Roads,Panjagutta,2026-01-11,17.4283,78.4524[m
+[32m+[m[32m85,Broken road near residential area,Roads,Hitech City,2025-07-10,17.4435,78.3772[m
+[32m+[m[32m86,Road damaged after recent rains,Roads,Gachibowli,2025-10-29,17.4401,78.3489[m
+[32m+[m[32m87,Broken road near residential area,Roads,Hitech City,2025-09-09,17.4435,78.3772[m
+[32m+[m[32m88,Large pothole causing accidents,Roads,Kondapur,2025-12-01,17.466,78.363[m
+[32m+[m[32m89,Large pothole causing accidents,Roads,Ameerpet,2025-12-16,17.4375,78.4482[m
+[32m+[m[32m90,Road repair work incomplete,Roads,LB Nagar,2026-01-10,17.3457,78.552[m
+[32m+[m[32m91,Road damaged after recent rains,Roads,Secunderabad,2025-06-11,17.4399,78.4983[m
+[32m+[m[32m92,Broken road near residential area,Roads,Miyapur,2025-09-21,17.4969,78.3562[m
+[32m+[m[32m93,Uneven road surface creating traffic issues,Roads,Uppal,2025-06-18,17.4058,78.5591[m
+[32m+[m[32m94,Road damaged after recent rains,Roads,Madhapur,2026-03-29,17.4483,78.3915[m
+[32m+[m[32m95,Uneven road surface creating traffic issues,Roads,LB Nagar,2026-04-07,17.3457,78.552[m
+[32m+[m[32m96,Road repair work incomplete,Roads,Ameerpet,2025-06-02,17.4375,78.4482[m
+[32m+[m[32m97,Large pothole causing accidents,Roads,Dilsukhnagar,2026-03-19,17.3688,78.5247[m
+[32m+[m[32m98,Uneven road surface creating traffic issues,Roads,Panjagutta,2025-11-13,17.4283,78.4524[m
+[32m+[m[32m99,Road damaged after recent rains,Roads,Kondapur,2025-11-08,17.466,78.363[m
+[32m+[m[32m100,Large pothole causing accidents,Roads,Hitech City,2025-11-13,17.4435,78.3772[m
+[32m+[m[32m101,Uneven road surface creating traffic issues,Roads,Hitech City,2025-08-10,17.4435,78.3772[m
+[32m+[m[32m102,Large pothole causing accidents,Roads,Madhapur,2025-07-16,17.4483,78.3915[m
+[32m+[m[32m103,Large pothole causing accidents,Roads,Kompally,2025-07-13,17.5251,78.4832[m
+[32m+[m[32m104,Broken road near residential area,Roads,Kondapur,2025-09-13,17.466,78.363[m
+[32m+[m[32m105,Uneven road surface creating traffic issues,Roads,Manikonda,2025-08-29,17.4062,78.39[m
+[32m+[m[32m106,Uneven road surface creating traffic issues,Roads,Manikonda,2026-04-09,17.4062,78.39[m
+[32m+[m[32m107,Road repair work incomplete,Roads,LB Nagar,2025-08-16,17.3457,78.552[m
+[32m+[m[32m108,Broken road near residential area,Roads,Kondapur,2025-12-15,17.466,78.363[m
+[32m+[m[32m109,Large pothole causing accidents,Roads,Jubilee Hills,2025-12-18,17.4316,78.4071[m
+[32m+[m[32m110,Road damaged after recent rains,Roads,Gachibowli,2025-12-10,17.4401,78.3489[m
+[32m+[m[32m111,Road damaged after recent rains,Roads,Dilsukhnagar,2026-02-27,17.3688,78.5247[m
+[32m+[m[32m112,Large pothole causing accidents,Roads,Dilsukhnagar,2026-03-23,17.3688,78.5247[m
+[32m+[m[32m113,Road damaged after recent rains,Roads,Kondapur,2025-11-02,17.466,78.363[m
+[32m+[m[32m114,Uneven road surface creating traffic issues,Roads,Manikonda,2025-11-14,17.4062,78.39[m
+[32m+[m[32m115,Road damaged after recent rains,Roads,Gachibowli,2026-02-07,17.4401,78.3489[m
+[32m+[m[32m116,Uneven road surface creating traffic issues,Roads,LB Nagar,2025-06-13,17.3457,78.552[m
+[32m+[m[32m117,Large pothole causing accidents,Roads,Kukatpally,2025-10-15,17.4948,78.3996[m
+[32m+[m[32m118,Road repair work incomplete,Roads,Kukatpally,2025-09-24,17.4948,78.3996[m
+[32m+[m[32m119,Broken road near residential area,Roads,Secunderabad,2026-02-05,17.4399,78.4983[m
+[32m+[m[32m120,Large pothole causing accidents,Roads,Kompally,2025-07-08,17.5251,78.4832[m
+[32m+[m[32m121,Broken road near residential area,Roads,Miyapur,2026-05-20,17.4969,78.3562[m
+[32m+[m[32m122,Large pothole causing accidents,Roads,Secunderabad,2026-01-19,17.4399,78.4983[m
+[32m+[m[32m123,Road repair work incomplete,Roads,LB Nagar,2025-12-16,17.3457,78.552[m
+[32m+[m[32m124,Road repair work incomplete,Roads,Hitech City,2026-03-11,17.4435,78.3772[m
+[32m+[m[32m125,Road repair work incomplete,Roads,Secunderabad,2025-08-07,17.4399,78.4983[m
+[32m+[m[32m126,Broken road near residential area,Roads,LB Nagar,2026-02-09,17.3457,78.552[m
+[32m+[m[32m127,Road repair work incomplete,Roads,Kondapur,2025-12-01,17.466,78.363[m
+[32m+[m[32m128,Broken road near residential area,Roads,Manikonda,2025-06-12,17.4062,78.39[m
+[32m+[m[32m129,Road damaged after recent rains,Roads,Miyapur,2025-12-06,17.4969,78.3562[m
+[32m+[m[32m130,Large pothole causing accidents,Roads,LB Nagar,2026-03-16,17.3457,78.552[m
+[32m+[m[32m131,Water leakage from main pipeline,Water,Dilsukhnagar,2025-06-07,17.3688,78.5247[m
+[32m+[m[32m132,Water supply interrupted for 3 days,Water,Miyapur,2026-01-22,17.4969,78.3562[m
+[32m+[m[32m133,Drinking water contamination reported,Water,Secunderabad,2025-11-13,17.4399,78.4983[m
+[32m+[m[32m134,Water leakage from main pipeline,Water,Dilsukhnagar,2025-12-08,17.3688,78.5247[m
+[32m+[m[32m135,Low water pressure affecting households,Water,Jubilee Hills,2025-11-04,17.4316,78.4071[m
+[32m+[m[32m136,Water leakage from main pipeline,Water,Ameerpet,2025-07-31,17.4375,78.4482[m
+[32m+[m[32m137,Water leakage from main pipeline,Water,Ameerpet,2025-06-06,17.4375,78.4482[m
+[32m+[m[32m138,Water supply interrupted for 3 days,Water,Madhapur,2026-03-25,17.4483,78.3915[m
+[32m+[m[32m139,Water supply interrupted for 3 days,Water,Miyapur,2025-12-18,17.4969,78.3562[m
+[32m+[m[32m140,Low water pressure affecting households,Water,Banjara Hills,2026-05-19,17.4126,78.4482[m
+[32m+[m[32m141,No drinking water available in locality,Water,Manikonda,2026-02-18,17.4062,78.39[m
+[32m+[m[32m142,Low water pressure affecting households,Water,Madhapur,2025-10-14,17.4483,78.3915[m
+[32m+[m[32m143,Low water pressure affecting households,Water,Ameerpet,2026-02-02,17.4375,78.4482[m
+[32m+[m[32m144,Drinking water contamination reported,Water,Dilsukhnagar,2025-12-23,17.3688,78.5247[m
+[32m+[m[32m145,Low water pressure affecting households,Water,Hitech City,2026-04-08,17.4435,78.3772[m
+[32m+[m[32m146,Water supply interrupted for 3 days,Water,Panjagutta,2025-10-27,17.4283,78.4524[m
+[32m+[m[32m147,No drinking water available in locality,Water,Jubilee Hills,2025-11-04,17.4316,78.4071[m
+[32m+[m[32m148,Low water pressure affecting households,Water,Miyapur,2025-09-02,17.4969,78.3562[m
+[32m+[m[32m149,Water supply interrupted for 3 days,Water,Ameerpet,2026-02-13,17.4375,78.4482[m
+[32m+[m[32m150,Low water pressure affecting households,Water,Panjagutta,2025-08-26,17.4283,78.4524[m
+[32m+[m[32m151,Water leakage from main pipeline,Water,Kompally,2025-08-30,17.5251,78.4832[m
+[32m+[m[32m152,Water supply interrupted for 3 days,Water,Madhapur,2026-05-28,17.4483,78.3915[m
+[32m+[m[32m153,Drinking water contamination reported,Water,Madhapur,2026-03-05,17.4483,78.3915[m
+[32m+[m[32m154,Low water pressure affecting households,Water,Miyapur,2026-03-27,17.4969,78.3562[m
+[32m+[m[32m155,No drinking water available in locality,Water,Kondapur,2025-06-03,17.466,78.363[m
+[32m+[m[32m156,Low water pressure affecting households,Water,Miyapur,2025-09-08,17.4969,78.3562[m
+[32m+[m[32m157,No drinking water available in locality,Water,Banjara Hills,2026-03-01,17.4126,78.4482[m
+[32m+[m[32m158,Water leakage from main pipeline,Water,LB Nagar,2025-11-01,17.3457,78.552[m
+[32m+[m[32m159,No drinking water available in locality,Water,Jubilee Hills,2026-04-10,17.4316,78.4071[m
+[32m+[m[32m160,Low water pressure affecting households,Water,Kondapur,2025-10-19,17.466,78.363[m
+[32m+[m[32m161,Drinking water contamination reported,Water,Banjara Hills,2025-12-19,17.4126,78.4482[m
+[32m+[m[32m162,Low water pressure affecting households,Water,Ameerpet,2026-05-18,17.4375,78.4482[m
+[32m+[m[32m163,Water supply interrupted for 3 days,Water,Jubilee Hills,2026-03-14,17.4316,78.4071[m
+[32m+[m[32m164,Drinking water contamination reported,Water,Kukatpally,2025-08-29,17.4948,78.3996[m
+[32m+[m[32m165,Low water pressure affecting households,Water,Panjagutta,2026-05-13,17.4283,78.4524[m
+[32m+[m[32m166,Low water pressure affecting households,Water,Manikonda,2025-09-28,17.4062,78.39[m
+[32m+[m[32m167,Low water pressure affecting households,Water,LB Nagar,2026-03-19,17.3457,78.552[m
+[32m+[m[32m168,No drinking water available in locality,Water,Jubilee Hills,2026-01-11,17.4316,78.4071[m
+[32m+[m[32m169,Drinking water contamination reported,Water,Panjagutta,2025-08-08,17.4283,78.4524[m
+[32m+[m[32m170,Water leakage from main pipeline,Water,Kompally,2025-08-23,17.5251,78.4832[m
+[32m+[m[32m171,Water leakage from main pipeline,Water,Kompally,2025-12-11,17.5251,78.4832[m
+[32m+[m[32m172,No drinking water available in locality,Water,Banjara Hills,2026-04-29,17.4126,78.4482[m
+[32m+[m[32m173,Drinking water contamination reported,Water,Panjagutta,2025-07-29,17.4283,78.4524[m
+[32m+[m[32m174,No drinking water available in locality,Water,Kukatpally,2025-12-15,17.4948,78.3996[m
+[32m+[m[32m175,No drinking water available in locality,Water,Secunderabad,2025-12-17,17.4399,78.4983[m
+[32m+[m[32m176,Low water pressure affecting households,Water,Dilsukhnagar,2025-09-20,17.3688,78.5247[m
+[32m+[m[32m177,Water supply interrupted for 3 days,Water,Kukatpally,2026-03-12,17.4948,78.3996[m
+[32m+[m[32m178,Water leakage from main pipeline,Water,Ameerpet,2026-04-21,17.4375,78.4482[m
+[32m+[m[32m179,Water supply interrupted for 3 days,Water,Kondapur,2026-03-26,17.466,78.363[m
+[32m+[m[32m180,Low water pressure affecting households,Water,Dilsukhnagar,2026-01-13,17.3688,78.5247[m
+[32m+[m[32m181,Low water pressure affecting households,Water,Ameerpet,2025-06-12,17.4375,78.4482[m
+[32m+[m[32m182,Water supply interrupted for 3 days,Water,Ameerpet,2026-01-17,17.4375,78.4482[m
+[32m+[m[32m183,Low water pressure affecting households,Water,Manikonda,2026-04-14,17.4062,78.39[m
+[32m+[m[32m184,Low water pressure affecting households,Water,Hitech City,2025-11-21,17.4435,78.3772[m
+[32m+[m[32m185,No drinking water available in locality,Water,Hitech City,2025-11-21,17.4435,78.3772[m
+[32m+[m[32m186,Drinking water contamination reported,Water,Ameerpet,2026-01-18,17.4375,78.4482[m
+[32m+[m[32m187,Low water pressure affecting households,Water,LB Nagar,2025-11-14,17.3457,78.552[m
+[32m+[m[32m188,Low water pressure affecting households,Water,LB Nagar,2025-08-08,17.3457,78.552[m
+[32m+[m[32m189,Water supply interrupted for 3 days,Water,Secunderabad,2026-03-29,17.4399,78.4983[m
+[32m+[m[32m190,No drinking water available in locality,Water,Banjara Hills,2026-02-10,17.4126,78.4482[m
+[32m+[m[32m191,Drinking water contamination reported,Water,Gachibowli,2025-10-08,17.4401,78.3489[m
+[32m+[m[32m192,Drinking water contamination reported,Water,Dilsukhnagar,2025-06-17,17.3688,78.5247[m
+[32m+[m[32m193,Water supply interrupted for 3 days,Water,Ameerpet,2025-07-04,17.4375,78.4482[m
+[32m+[m[32m194,Water leakage from main pipeline,Water,Panjagutta,2026-03-12,17.4283,78.4524[m
+[32m+[m[32m195,No drinking water available in locality,Water,LB Nagar,2026-01-14,17.3457,78.552[m
+[32m+[m[32m196,No drinking water available in locality,Water,Gachibowli,2026-05-24,17.4401,78.3489[m
+[32m+[m[32m197,No drinking water available in locality,Water,Uppal,2026-01-18,17.4058,78.5591[m
+[32m+[m[32m198,Water leakage from main pipeline,Water,Banjara Hills,2026-05-13,17.4126,78.4482[m
+[32m+[m[32m199,Water supply interrupted for 3 days,Water,Dilsukhnagar,2026-03-10,17.3688,78.5247[m
+[32m+[m[32m200,Low water pressure affecting households,Water,Uppal,2025-07-15,17.4058,78.5591[m
+[32m+[m[32m201,No drinking water available in locality,Water,Gachibowli,2025-06-03,17.4401,78.3489[m
+[32m+[m[32m202,Water leakage from main pipeline,Water,Banjara Hills,2025-07-26,17.4126,78.4482[m
+[32m+[m[32m203,Drinking water contamination reported,Water,Kukatpally,2025-06-12,17.4948,78.3996[m
+[32m+[m[32m204,No drinking water available in locality,Water,Ameerpet,2026-01-02,17.4375,78.4482[m
+[32m+[m[32m205,No drinking water available in locality,Water,Uppal,2025-10-27,17.4058,78.5591[m
+[32m+[m[32m206,Water leakage from main pipeline,Water,Jubilee Hills,2026-05-16,17.4316,78.4071[m
+[32m+[m[32m207,Drinking water contamination reported,Water,Ameerpet,2025-11-26,17.4375,78.4482[m
+[32m+[m[32m208,Water leakage from main pipeline,Water,LB Nagar,2025-12-23,17.3457,78.552[m
+[32m+[m[32m209,Drinking water contamination reported,Water,Madhapur,2026-03-26,17.4483,78.3915[m
+[32m+[m[32m210,Water supply interrupted for 3 days,Water,Banjara Hills,2026-05-28,17.4126,78.4482[m
+[32m+[m[32m211,Low water pressure affecting households,Water,Dilsukhnagar,2025-09-11,17.3688,78.5247[m
+[32m+[m[32m212,No drinking water available in locality,Water,Banjara Hills,2025-11-13,17.4126,78.4482[m
+[32m+[m[32m213,No drinking water available in locality,Water,Uppal,2026-01-07,17.4058,78.5591[m
+[32m+[m[32m214,Low water pressure affecting households,Water,Miyapur,2025-08-13,17.4969,78.3562[m
+[32m+[m[32m215,Low water pressure affecting households,Water,Kondapur,2025-09-07,17.466,78.363[m
+[32m+[m[32m216,Water supply interrupted for 3 days,Water,Dilsukhnagar,2025-10-16,17.3688,78.5247[m
+[32m+[m[32m217,Water supply interrupted for 3 days,Water,Gachibowli,2026-03-26,17.4401,78.3489[m
+[32m+[m[32m218,Low water pressure affecting households,Water,Secunderabad,2025-10-03,17.4399,78.4983[m
+[32m+[m[32m219,Low water pressure affecting households,Water,Gachibowli,2026-04-09,17.4401,78.3489[m
+[32m+[m[32m220,Water supply interrupted for 3 days,Water,Miyapur,2025-11-15,17.4969,78.3562[m
+[32m+[m[32m221,Water supply interrupted for 3 days,Water,LB Nagar,2025-06-10,17.3457,78.552[m
+[32m+[m[32m222,Low water pressure affecting households,Water,Kondapur,2025-10-09,17.466,78.363[m
+[32m+[m[32m223,Water leakage from main pipeline,Water,Banjara Hills,2025-11-16,17.4126,78.4482[m
+[32m+[m[32m224,Low water pressure affecting households,Water,Ameerpet,2025-07-17,17.4375,78.4482[m
+[32m+[m[32m225,Water supply interrupted for 3 days,Water,Panjagutta,2025-09-23,17.4283,78.4524[m
+[32m+[m[32m226,Drinking water contamination reported,Water,Ameerpet,2026-04-27,17.4375,78.4482[m
+[32m+[m[32m227,No drinking water available in locality,Water,LB Nagar,2026-05-10,17.3457,78.552[m
+[32m+[m[32m228,Water leakage from main pipeline,Water,Madhapur,2025-10-31,17.4483,78.3915[m
+[32m+[m[32m229,Water supply interrupted for 3 days,Water,Madhapur,2026-02-19,17.4483,78.3915[m
+[32m+[m[32m230,Low water pressure affecting households,Water,Gachibowli,2026-01-27,17.4401,78.3489[m
+[32m+[m[32m231,Low water pressure affecting households,Water,Secunderabad,2025-09-14,17.4399,78.4983[m
+[32m+[m[32m232,Drinking water contamination reported,Water,Kondapur,2026-04-23,17.466,78.363[m
+[32m+[m[32m233,Water supply interrupted for 3 days,Water,Secunderabad,2025-06-10,17.4399,78.4983[m
+[32m+[m[32m234,Drinking water contamination reported,Water,Secunderabad,2026-01-03,17.4399,78.4983[m
+[32m+[m[32m235,Low water pressure affecting households,Water,Madhapur,2025-10-18,17.4483,78.3915[m
+[32m+[m[32m236,Drinking water contamination reported,Water,Dilsukhnagar,2026-03-24,17.3688,78.5247[m
+[32m+[m[32m237,Water leakage from main pipeline,Water,Uppal,2026-05-15,17.4058,78.5591[m
+[32m+[m[32m238,Drinking water contamination reported,Water,Jubilee Hills,2026-05-28,17.4316,78.4071[m
+[32m+[m[32m239,Water leakage from main pipeline,Water,Banjara Hills,2025-09-27,17.4126,78.4482[m
+[32m+[m[32m240,Low water pressure affecting households,Water,Jubilee Hills,2025-10-14,17.4316,78.4071[m
+[32m+[m[32m241,Water leakage from 

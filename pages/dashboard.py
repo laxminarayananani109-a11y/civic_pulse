@@ -5,8 +5,8 @@ import plotly.express as px
 import folium
 import streamlit as st
 from folium.plugins import HeatMap
-from streamlit_folium import st_folium
 from streamlit_autorefresh import st_autorefresh
+from streamlit_folium import st_folium
 
 st.set_page_config(
     page_title="CivicPulse Dashboard",
@@ -84,8 +84,10 @@ st.sidebar.metric("Resolved", total_complaints // 2)
 
 st.sidebar.metric("Hotspots", len(df["location"].unique()))
 
-c1, c2, c3, c4, c5 = st.columns(5)
+c1 = st.columns(1)[0]
 
+with c1:
+    st.metric("Total Complaints", total_complaints)
 col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
 cards = [
@@ -244,11 +246,9 @@ m = folium.Map(location=[17.3850, 78.4867], zoom_start=10)
 heat_data = []
 
 for _, row in df.iterrows():
-
     location = row["location"]
 
     if location in location_coords:
-
         lat, lon = location_coords[location]
 
         heat_data.append([lat, lon])
@@ -283,14 +283,13 @@ st.divider()
 st.subheader("🚨 Recent Complaints")
 
 for _, row in df.tail(5).iterrows():
-
     st.info(
         f"""
-Category: {row['category']}
+Category: {row["category"]}
 
-Location: {row['location']}
+Location: {row["location"]}
 
-Issue: {row['description']}
+Issue: {row["description"]}
 """
     )
 

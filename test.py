@@ -1,3 +1,4 @@
+"""Unit tests for Civic Pulse project."""
 from utils.ai_classifier import classify_complaint
 
 print(classify_complaint("No water supply for 2 days"))
