@@ -1,3 +1,4 @@
+"""Utility script to verify database integrity."""
 import sqlite3
 
 conn = sqlite3.connect("data/complaints.db")

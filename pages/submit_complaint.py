@@ -1,3 +1,4 @@
+"""Page for submitting new civic complaints."""
 import streamlit as st
 from utils.database import add_complaint
 from data.hyderabadlocations import HYDERABAD_LOCATIONS
@@ -33,6 +34,7 @@ if st.button("Submit Complaint"):
         st.error("Please fill all fields")
 
     else:
-        add_complaint(description, category, location)
+
+        add_complaint(description, category, location, address, severity)
 
         st.success("Complaint submitted successfully!")

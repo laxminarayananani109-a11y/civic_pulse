@@ -1,3 +1,4 @@
+"""Main Streamlit application for Civic Pulse."""
 import streamlit as st
 from utils.database import get_total_complaints, get_total_locations
 

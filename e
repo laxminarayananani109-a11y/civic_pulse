@@ -1,0 +1,13 @@
+[33m7b52f4e[m[33m ([m[1;33mtag: [m[1;33mv1.0.0[m[33m, [m[1;31morigin/my-feature-branch[m[33m)[m Fix Bandit security warnings
+[33m7a23fdb[m Merge branch 'main' into 'app-classifier'
+[33m95d285b[m Merge branch 'main' into 'Database'
+[33m39d0e9e[m Updated changelog
+[33m31baf2d[m Added GitLab CI
+[33mdce561d[m add test_app.py
+[33m921ae40[m Added pytest tests
+[33m8676125[m Added GitLab CI pipeline
+[33m1875e55[m Updated Civic Pulse complaint form and dashboard
+[33m4daba95[m adding complaints and app.py
+[33m7200cd0[m adding submit_complaint and app.py
+[33me507c66[m[33m ([m[1;32mmain[m[33m)[m Initial commit
+[33m20a4b6e[m Add CONTRIBUTING.md
