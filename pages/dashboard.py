@@ -207,7 +207,6 @@ st.plotly_chart(fig, use_container_width=True)
 # ======================
 
 if not df.empty:
-
     top_category = df["category"].value_counts().idxmax()
 
     st.success(f"Most Reported Issue: {top_category}")
@@ -263,11 +262,9 @@ m = folium.Map(location=[17.3850, 78.4867], zoom_start=10)
 heat_data = []
 
 for _, row in df.iterrows():
-
     location = row["location"]
 
     if location in location_coords:
-
         lat, lon = location_coords[location]
 
         heat_data.append([lat, lon])
@@ -302,14 +299,13 @@ st.divider()
 st.subheader("🚨 Recent Complaints")
 
 for _, row in df.tail(5).iterrows():
-
     st.info(
         f"""
-Category: {row['category']}
+Category: {row["category"]}
 
-Location: {row['location']}
+Location: {row["location"]}
 
-Issue: {row['description']}
+Issue: {row["description"]}
 """
     )
 
