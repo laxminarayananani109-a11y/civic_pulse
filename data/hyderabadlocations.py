@@ -1,3 +1,5 @@
+"""Hyderabad location data for Civic Pulse complaint submissions."""
+
 HYDERABAD_LOCATIONS = [
     "Abids",
     "Ameerpet",
