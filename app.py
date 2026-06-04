@@ -1,4 +1,4 @@
-"""Main Streamlit application for Civic Pulse."""
+"""Main Civic Pulse Streamlit application."""
 import streamlit as st
 from utils.database import get_total_complaints, get_total_locations
 
@@ -64,12 +64,18 @@ st.markdown("## 🌍 About CivicPulse")
 
 st.markdown(
     """
-CivicPulse is an AI-powered civic issue monitoring platform designed to help citizens and local authorities track, analyze, and resolve urban problems efficiently.
+    CivicPulse is an AI-powered civic issue monitoring platform
+    designed to help citizens and local authorities track,
+    analyze, and resolve urban problems efficiently.
 
-The platform enables real-time complaint reporting, intelligent issue categorization, geographic heatmap visualization, and data-driven civic analytics.
+    The platform enables real-time complaint reporting,
+    intelligent issue categorization, geographic heatmap
+    visualization, and data-driven civic analytics.
 
-By combining artificial intelligence with interactive dashboards, CivicPulse helps improve transparency, response efficiency, and smart city management.
-"""
+    By combining artificial intelligence with interactive
+    dashboards, CivicPulse helps improve transparency,
+    response efficiency, and smart city management.
+    """
 )
 st.markdown("---")
 

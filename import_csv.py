@@ -1,6 +1,6 @@
-"""Script to import complaint data from CSV files into the database."""
-import pandas as pd
+"""Import complaints from CSV into SQLite database."""
 import sqlite3
+import pandas as pd
 
 # Read CSV
 df = pd.read_csv("data/complaints.csv")

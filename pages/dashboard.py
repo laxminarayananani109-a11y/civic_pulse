@@ -1,9 +1,8 @@
-"""Dashboard page for visualizing civic complaints and analytics."""
+"""Civic Pulse dashboard page with analytics and visualizations."""
 import sqlite3
-
-import folium
 import pandas as pd
 import plotly.express as px
+import folium
 import streamlit as st
 from folium.plugins import HeatMap
 from streamlit_autorefresh import st_autorefresh
@@ -16,10 +15,13 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-dark_mode = st.toggle("Dark Mode")
-
-if dark_mode:
-    st.write("Dark mode enabled")
+DARK_MODE = True
+CARD_BG = "#1c2128"
+CARD_BORDER = "#30363d"
+TEXT_COLOR = "white"
+LIGHT_BG = "#ffffff"
+LIGHT_BORDER = "#d1d5db"
+LIGHT_TEXT = "#111827"
 st.markdown(
     """
 <div style="
@@ -98,23 +100,23 @@ cards = [
     ("🚦 Traffic", traffic_count),
 ]
 
+if DARK_MODE:
+    bg, border, color = CARD_BG, CARD_BORDER, TEXT_COLOR
+else:
+    bg, border, color = LIGHT_BG, LIGHT_BORDER, LIGHT_TEXT
+
 for col, (title, value) in zip([col1, col2, col3, col4, col5, col6, col7], cards):
     with col:
         st.markdown(
             f"""
         <div style="
-            if dark_mode:
-                card_bg = "#1c2128"
-                card_border = "#30363d"
-                text_color = "white"
-            else:
-                card_bg = "#ffffff"
-                card_border = "#d1d5db"
-                text_color = "#111827"
+            background-color: {bg};
             padding:20px;
             border-radius:15px;
-            border:1px solid #30363d;
-            text-align:center;">
+            border:1px solid {border};
+            text-align:center;
+            color: {color};
+            ">
             <h4>{title}</h4>
             <h1>{value}</h1>
         </div>
@@ -124,15 +126,10 @@ for col, (title, value) in zip([col1, col2, col3, col4, col5, col6, col7], cards
 
 st.divider()
 
-# ======================
-# CHARTS
-# ======================
-
 if not df.empty:
-    
-    st.subheader("📈 Complaints by Category")
-
     category_counts = df["category"].value_counts()
+
+    st.subheader("📈 Complaints by Category")
 
     bar_fig = px.bar(
         x=category_counts.index,
@@ -142,73 +139,60 @@ if not df.empty:
         title="📊 Complaints by Category",
     )
 
+    bar_fig.update_layout(
+        paper_bgcolor="#0b1120",
+        plot_bgcolor="#0b1120",
+        font_color="white",
+        title_font_size=24,
+        height=500,
+        xaxis={"showgrid": False, "title": ""},
+        yaxis={"showgrid": True, "gridcolor": "#1e293b", "title": ""},
+    )
+
+    bar_fig.update_traces(
+        marker_color=["#38BDF8", "#818CF8", "#22C55E", "#F59E0B", "#EF4444", "#14B8A6"],
+        marker_line_color="white",
+        marker_line_width=1.5,
+        opacity=0.95,
+        textposition="outside",
+    )
+
     st.plotly_chart(bar_fig, use_container_width=True)
 
-else:
-    st.info("No complaint data available.")
-# Modern Styling
-bar_fig.update_layout(
-    paper_bgcolor="#0b1120",
-    plot_bgcolor="#0b1120",
-    font_color="white",
-    title_font_size=24,
-    height=500,
-    xaxis=dict(showgrid=False, title=""),
-    yaxis=dict(showgrid=True, gridcolor="#1e293b", title=""),
-)
+    fig = px.pie(
+        values=category_counts.values,
+        names=category_counts.index,
+        hole=0.55,
+        title="🔥 Complaint Distribution",
+        color_discrete_sequence=[
+            "#38BDF8",
+            "#818CF8",
+            "#22C55E",
+            "#F59E0B",
+            "#EF4444",
+            "#14B8A6",
+        ],
+    )
 
-# Fancy Bars
-bar_fig.update_traces(
-    marker_color=["#38BDF8", "#818CF8", "#22C55E", "#F59E0B", "#EF4444", "#14B8A6"],
-    marker_line_color="white",
-    marker_line_width=1.5,
-    opacity=0.95,
-    textposition="outside",
-)
+    fig.update_traces(
+        textinfo="percent+label",
+        pull=[0.03, 0.03, 0.03, 0.03, 0.03, 0.03],
+        marker={"line": {"color": "#0b1120", "width": 3}},
+    )
 
-st.plotly_chart(bar_fig, use_container_width=True)
+    fig.update_layout(
+        paper_bgcolor="#0b1120",
+        plot_bgcolor="#0b1120",
+        font_color="white",
+        title_font_size=26,
+        height=600,
+        legend_title="Categories",
+        legend_font_size=14,
+    )
 
-# Attractive Pie Chart
-fig = px.pie(
-    values=category_counts.values,
-    names=category_counts.index,
-    hole=0.55,
-    title="🔥 Complaint Distribution",
-    color_discrete_sequence=[
-        "#38BDF8",
-        "#818CF8",
-        "#22C55E",
-        "#F59E0B",
-        "#EF4444",
-        "#14B8A6",
-    ],
-)
+    st.plotly_chart(fig, use_container_width=True)
 
-# Modern Styling
-fig.update_traces(
-    textinfo="percent+label",
-    pull=[0.03, 0.03, 0.03, 0.03, 0.03, 0.03],
-    marker=dict(line=dict(color="#0b1120", width=3)),
-)
-
-fig.update_layout(
-    paper_bgcolor="#0b1120",
-    plot_bgcolor="#0b1120",
-    font_color="white",
-    title_font_size=26,
-    height=600,
-    legend_title="Categories",
-    legend_font_size=14,
-)
-
-st.plotly_chart(fig, use_container_width=True)
-# ======================
-# INSIGHTS
-# ======================
-
-if not df.empty:
     top_category = df["category"].value_counts().idxmax()
-
     st.success(f"Most Reported Issue: {top_category}")
 
 st.divider()

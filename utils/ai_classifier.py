@@ -1,22 +1,22 @@
-"""AI-based classifier for categorizing civic complaints."""
+"""AI-powered complaint classification utilities."""
+
 def classify_complaint(text):
-    """Classify complaint text into a category."""
+    """Classify a complaint text into a category."""
     text = text.lower()
 
-    if any(word in text for word in ["water", "tap", "supply", "pipeline"]):
+    if "water" in text or "tap" in text or "supply" in text or "pipeline" in text:
         return "Water Supply"
 
-    elif any(word in text for word in ["road", "pothole", "street"]):
+    if "road" in text or "pothole" in text or "street" in text:
         return "Roads & Potholes"
 
-    elif any(word in text for word in ["electricity", "power", "current"]):
+    if "electricity" in text or "power" in text or "current" in text:
         return "Electricity"
 
-    elif any(word in text for word in ["garbage", "waste", "trash"]):
+    if "garbage" in text or "waste" in text or "trash" in text:
         return "Garbage"
 
-    elif any(word in text for word in ["traffic", "signal", "jam"]):
+    if "traffic" in text or "signal" in text or "jam" in text:
         return "Traffic"
 
-    else:
-        return "Other"
+    return "Other"

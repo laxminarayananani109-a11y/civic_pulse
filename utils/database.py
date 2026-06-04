@@ -1,4 +1,4 @@
-"""Database helper functions for Civic Pulse complaint storage."""
+"""Database utilities for Civic Pulse complaint management."""
 import sqlite3
 from datetime import datetime
 
@@ -6,7 +6,7 @@ DB_PATH = "data/complaints.db"
 
 
 def create_table():
-    """Create complaints table if it does not exist."""
+    """Create the complaints table if it does not exist."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
@@ -26,8 +26,8 @@ def create_table():
     conn.close()
 
 
-def add_complaint(description, category, location, address, severity):
-    """Insert a new complaint into the database."""
+def add_complaint(description, category, location):
+    """Add a new complaint to the database."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
@@ -52,7 +52,7 @@ def add_complaint(description, category, location, address, severity):
 
 
 def get_all_complaints():
-    """Fetch all complaints from database."""
+    """Retrieve all complaints from the database."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
@@ -67,7 +67,7 @@ def get_all_complaints():
 
 
 def get_total_complaints():
-    """Get the total number of complaints in the database."""
+    """Get the total count of complaints in the database."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
@@ -81,7 +81,7 @@ def get_total_complaints():
 
 
 def get_total_locations():
-    """Get the total number of unique locations with complaints."""
+    """Get the total count of unique locations in the database."""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 

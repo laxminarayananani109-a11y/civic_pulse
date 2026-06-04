@@ -1,4 +1,4 @@
-"""Page for submitting new civic complaints."""
+"""Complaint submission page for Civic Pulse."""
 import streamlit as st
 from utils.database import add_complaint
 from data.hyderabadlocations import HYDERABAD_LOCATIONS
