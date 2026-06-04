@@ -1,4 +1,6 @@
+"""AI-based classifier for categorizing civic complaints."""
 def classify_complaint(text):
+    """Classify complaint text into a category."""
     text = text.lower()
 
     if any(word in text for word in ["water", "tap", "supply", "pipeline"]):

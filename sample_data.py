@@ -1,3 +1,4 @@
+"""Script to generate sample civic complaint data."""
 from utils.database import create_table, add_complaint, get_all_complaints
 
 create_table()

@@ -1,12 +1,12 @@
+"""Logic for detecting duplicate complaint submissions."""
 from difflib import SequenceMatcher
 
 
-def is_duplicate(new_complaint, existing_complaints, threshold=0.8):
-
-    for complaint in existing_complaints:
-
+def is_duplicate(new_text, existing_texts):
+    """Check if complaint is duplicate."""
+    for text in existing_texts:
         similarity = SequenceMatcher(
-            None, new_complaint.lower(), complaint.lower()
+            None, new_text.lower(), text.lower()
         ).ratio()
 
         if similarity > threshold:

@@ -1,3 +1,4 @@
+"""Generates synthetic civic complaint dataset."""
 import pandas as pd
 import secrets
 from datetime import datetime, timedelta

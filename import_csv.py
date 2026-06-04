@@ -1,3 +1,4 @@
+"""Script to import complaint data from CSV files into the database."""
 import pandas as pd
 import sqlite3
 

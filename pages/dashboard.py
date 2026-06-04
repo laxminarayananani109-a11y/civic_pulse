@@ -1,11 +1,13 @@
-import streamlit as st
-import pandas as pd
+"""Dashboard page for visualizing civic complaints and analytics."""
 import sqlite3
-import plotly.express as px
+
 import folium
+import pandas as pd
+import plotly.express as px
+import streamlit as st
 from folium.plugins import HeatMap
-from streamlit_folium import st_folium
 from streamlit_autorefresh import st_autorefresh
+from streamlit_folium import st_folium
 
 st.set_page_config(
     page_title="CivicPulse Dashboard",
@@ -14,7 +16,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-dark_mode = True
+dark_mode = st.toggle("Dark Mode")
+
+if dark_mode:
+    st.write("Dark mode enabled")
 st.markdown(
     """
 <div style="
@@ -77,8 +82,10 @@ st.sidebar.metric("Resolved", total_complaints // 2)
 
 st.sidebar.metric("Hotspots", len(df["location"].unique()))
 
-c1, c2, c3, c4, c5 = st.columns(5)
+c1 = st.columns(1)[0]
 
+with c1:
+    st.metric("Total Complaints", total_complaints)
 col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
 cards = [
@@ -122,21 +129,23 @@ st.divider()
 # ======================
 
 if not df.empty:
-
+    
     st.subheader("📈 Complaints by Category")
 
     category_counts = df["category"].value_counts()
 
-    # Bar Chart
-    # Bar Chart
-bar_fig = px.bar(
-    x=category_counts.index,
-    y=category_counts.values,
-    text=category_counts.values,
-    labels={"x": "Category", "y": "Complaints"},
-    title="📊 Complaints by Category",
-)
+    bar_fig = px.bar(
+        x=category_counts.index,
+        y=category_counts.values,
+        text=category_counts.values,
+        labels={"x": "Category", "y": "Complaints"},
+        title="📊 Complaints by Category",
+    )
 
+    st.plotly_chart(bar_fig, use_container_width=True)
+
+else:
+    st.info("No complaint data available.")
 # Modern Styling
 bar_fig.update_layout(
     paper_bgcolor="#0b1120",
