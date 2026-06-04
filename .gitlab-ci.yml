@@ -16,19 +16,24 @@ before_script:
   
 
 lint:
-  stage: lint
+  stage: quality
   script:
     - ruff check .
 
 format:
-  stage: format
+  stage: quality
   script:
     - ruff format --check .
 
 type_check:
-  stage: type_check
+  stage: quality
   script:
     - mypy .
+
+quality:
+  stage: quality
+  script: 
+    -  pylint .
 
 security:
   stage: security
@@ -40,13 +45,8 @@ dependency_audit:
   script:
     - pip-audit
 
-quality:
-  stage: quality
-  script: 
-    -  pylint .
-
 test:
-  stage: test
+  stage: coverage
   script:
     - pytest
 
