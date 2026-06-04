@@ -125,7 +125,11 @@ hackathon/
 
 ## Contributors
 
+Vasishta koduri
 Laxminarayana Padamati
+Ramcharan radharapu
+Noelpaul mulkanpally
+Dhruva gadegoni
 
 ---
 
